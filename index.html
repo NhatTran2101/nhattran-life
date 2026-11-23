@@ -1,0 +1,731 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nhật Trần · Nhattran.life</title>
+<meta name="description" content="Nhật Trần, Founder & CEO Gendigi và Project Manager tại LevelUp Việt Nam. 8 năm trong Marketing và Thương mại điện tử, ghi lại những gì mình làm đúng, làm sai và vẫn đang học.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nhattran.life/">
+<meta property="og:title" content="Nhật Trần · Nhattran.life">
+<meta property="og:description" content="8 năm trong Marketing và Thương mại điện tử. Những gì mình làm đúng, làm sai, và vẫn đang học.">
+<meta property="og:image" content="https://nhattran.life/assets/img/9b2ea9a542023743b3ca3a4431b9a68d.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F7F7F5">
+<link rel="canonical" href="https://nhattran.life/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,400;0,6..12,600;1,6..12,400&display=swap" rel="stylesheet">
+<style>
+section[id]{scroll-margin-top:72px}
+[hidden]{display:none!important}
+body.lock{overflow:hidden}
+body{margin:0;background:#F7F7F5}
+html{scroll-behavior:smooth}
+a{color:#111111}a:hover{color:#111111}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes up{from{opacity:0;transform:translate(-50%,40px)}to{opacity:1;transform:translate(-50%,0)}}
+@keyframes swapA{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes swapB{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@keyframes draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes lit{to{color:var(--to)}}
+@keyframes litmk{to{color:var(--to);background-size:100% 4px}}
+.rise{opacity:0;animation:rise .9s cubic-bezier(.2,.7,.2,1) forwards}
+.portrait{position:absolute;left:50%;bottom:0;transform:translate(-50%,0);height:640px;width:auto;z-index:1;opacity:0;filter:grayscale(1);animation:up 1.1s .25s cubic-bezier(.2,.7,.2,1) forwards;-webkit-mask-image:linear-gradient(180deg,#000 82%,transparent 100%);mask-image:linear-gradient(180deg,#000 82%,transparent 100%)}
+.swapA{animation:swapA .5s cubic-bezier(.2,.7,.2,1)}
+.swapB{animation:swapB .5s cubic-bezier(.2,.7,.2,1)}
+.lw{color:var(--to)}
+.mk{background-image:linear-gradient(#111111,#111111);background-repeat:no-repeat;background-position:0 92%;background-size:100% 4px}
+.draw{stroke-dasharray:1;stroke-dashoffset:0}
+.qsec{view-timeline-name:--q}
+.bw{filter:grayscale(1) contrast(1.05);transition:filter .6s ease,transform 1s cubic-bezier(.2,.7,.2,1)}
+.bwh:hover .bw,.bw:hover{filter:grayscale(0)!important}
+.navl{position:relative;padding:12px 2px;text-decoration:none}
+.navl:hover{text-decoration:underline;text-underline-offset:6px}
+.btn{transition:background .2s,color .2s}
+.btn:hover{background:#F7F7F5!important;color:#111111!important}
+.row:hover{background:#EFEFEC}
+.btn{border-radius:12px}
+button{border-radius:12px}
+[role=tab]{border-radius:0}
+.bw{border-radius:16px}
+.row{border-radius:12px}
+.svc{transition:transform .3s cubic-bezier(.2,.7,.2,1),box-shadow .3s}
+.svc:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(17,17,17,.1)}
+.ph{position:absolute;display:block;margin:0;border:0;background:#FFFFFF;cursor:grab;touch-action:none;user-select:none;-webkit-user-select:none;font:inherit;text-align:left;transition:left .6s cubic-bezier(.2,.7,.2,1),top .6s cubic-bezier(.2,.7,.2,1),transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s}
+.ph{border-radius:10px}
+.ph img{border-radius:6px;pointer-events:none;-webkit-user-drag:none;filter:grayscale(1);transition:filter .5s}
+.ph:hover img,.ph.drag img{filter:grayscale(0)!important}
+.ph.drag{transition:none;cursor:grabbing}
+@supports (animation-timeline: view()){
+.reveal{animation:rise linear both;animation-timeline:view();animation-range:entry 0% entry 35%}
+.draw{animation:draw linear both;animation-timeline:view();animation-range:entry 20% cover 50%}
+.lw{color:#D2D2CE;animation:lit linear both;animation-timeline:--q}
+.mk{background-size:0% 4px;animation-name:litmk}
+}
+.mob{display:none}
+@media (max-width: 720px){
+.desk{display:none!important}
+.mob{display:inline}
+.ptable{height:auto!important;display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:18px!important;-webkit-overflow-scrolling:touch}
+.ptable .ph{position:relative!important;left:auto!important;top:auto!important;flex:none;width:74vw!important;max-width:340px;transform:none!important;scroll-snap-align:center;touch-action:pan-x pan-y;z-index:auto!important}
+.portrait{height:380px!important}
+}
+@media (max-width: 900px){
+.portrait{position:relative;left:auto;transform:none;display:block;margin:8px auto 0;height:440px;animation:fade 1s .2s forwards}
+.herobottom{flex-direction:column;align-items:flex-start!important}
+.navmid{display:none!important}
+.side{position:static!important}
+}
+@keyframes tocolor{from{filter:grayscale(1) contrast(1.05)}to{filter:grayscale(0) contrast(1)}}
+@supports (animation-timeline: view()){
+.bw{animation:tocolor linear both;animation-timeline:view();animation-range:entry 10% cover 42%}
+.ph img{animation:tocolor linear both;animation-timeline:view();animation-range:entry 25% cover 50%}
+.portrait{animation:up 1.1s .25s cubic-bezier(.2,.7,.2,1) forwards,tocolor linear both;animation-timeline:auto,view();animation-range:normal,exit 0% exit 45%}
+}
+@media (prefers-reduced-motion: reduce){
+.bw,.ph img{animation:none!important}
+.portrait{filter:grayscale(0)!important}
+
+.rise,.reveal,.swapA,.swapB,.portrait{animation:none!important;opacity:1!important}
+.draw{animation:none!important;stroke-dashoffset:0}
+.lw{animation:none!important;color:var(--to)!important}
+.mk{background-size:100% 4px!important}
+.ph{transition:none}
+}
+@media (max-width: 900px){
+.portrait{transform:none!important;animation:fade 1s .2s forwards}
+@supports (animation-timeline: view()){
+.portrait{animation:fade 1s .2s forwards,tocolor linear both;animation-timeline:auto,view();animation-range:normal,exit 0% exit 45%}
+}
+}
+@media (max-width: 720px){.ptable{align-items:center}}
+@media (prefers-reduced-motion: reduce){.portrait{animation:none!important;opacity:1!important}}
+</style>
+</head>
+<body>
+<div style="min-height: 100vh; background: #F7F7F5; color: #111111; font-family: 'Nunito Sans', system-ui, sans-serif; font-size: 17px; line-height: 1.85">
+
+  <header style="position: sticky; top: 0; z-index: 30; background: rgba(247,247,245,0.92); border-bottom: 1px solid #E4E4E1">
+    <nav aria-label="Chính" style="max-width: 1120px; margin: 0 auto; padding: 10px clamp(20px, 4vw, 40px); display: flex; align-items: center; justify-content: space-between; gap: 16px; font-family: 'Lexend', sans-serif; font-size: 13px; letter-spacing: 1.5px">
+      <a href="#top" aria-label="Nhattran.Life, về đầu trang" style="display: inline-flex; align-items: center; min-height: 44px; text-decoration: none"><img src="assets/img/87c26fe39c3deceb5281165145abc7ca.png" alt="Nhattran.Life" style="display: block; height: clamp(22px, 2.6vw, 28px); width: auto"></a>
+      <div class="navmid" style="display: flex; gap: 28px">
+        <a class="navl" href="#hanh-trinh">HÀNH TRÌNH</a>
+        <a class="navl" href="#quan-diem">QUAN ĐIỂM</a>
+        <a class="navl" href="#chia-se">CHIA SẺ</a>
+        <a class="navl" href="#ngoai-gio">NGOÀI GIỜ</a>
+      </div>
+      <a class="btn" href="#ket-noi" style="height: 44px; display: inline-flex; align-items: center; padding: 0 18px; background: #111111; color: #F7F7F5; text-decoration: none; white-space: nowrap; border: 1px solid #111111">CÀ PHÊ NHÉ →</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section style="position: relative; max-width: 1120px; margin: 0 auto; padding: 36px clamp(20px, 4vw, 40px) 56px; overflow: clip">
+      <div class="rise" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; font-family: 'Lexend', sans-serif; font-size: 13px; letter-spacing: 2px; color: #3A3A3A">
+        <span>CHÀO BẠN, MÌNH LÀ</span>
+        <span>FOUNDER &amp; CEO GENDIGI · PROJECT MANAGER LEVELUP</span>
+      </div>
+      <h1 class="rise" style="animation-delay: .1s; margin: 28px 0 0; font-family: 'Lexend', sans-serif; font-weight: 500; font-size: clamp(46px, 12.2vw, 168px); line-height: 1.15; letter-spacing: -0.03em; text-align: center; white-space: nowrap">NHẬT TRẦN</h1>
+      <img class="portrait" src="assets/img/60b7a1ec6837be7ac89658e5e1877cd6.png" alt="Nhật Trần cầm micro, khoanh tay">
+      <div class="herobottom" style="position: relative; z-index: 2; margin-top: clamp(40px, 16vw, 230px); display: flex; justify-content: space-between; align-items: flex-end; gap: 40px">
+        <div class="rise" style="animation-delay: .5s; display: flex; flex-direction: column; gap: 12px; max-width: 360px">
+          <span style="font-family: 'Lexend', sans-serif; font-size: 12px; letter-spacing: 2px">MÌNH ĐANG LÀM</span>
+          <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px">
+            <a class="bwh" href="#dang-lam" style="display: flex; flex-direction: column; gap: 6px; text-decoration: none"><span style="display: block; overflow: clip"><img class="bw" src="assets/img/68abe4351f89346260ff23d5efe8d38a.jpg" alt="Gendigi" style="display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 75% 40%"></span><span style="font-family: 'Lexend', sans-serif; font-size: 11px; letter-spacing: 1.5px">GENDIGI</span></a>
+            <a class="bwh" href="#dang-lam" style="display: flex; flex-direction: column; gap: 6px; text-decoration: none"><span style="display: block; overflow: clip"><img class="bw" src="assets/img/6c7005ffb845c5233f9db617e62835db.jpg" alt="LevelUp Việt Nam" style="display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 50%"></span><span style="font-family: 'Lexend', sans-serif; font-size: 11px; letter-spacing: 1.5px">LEVELUP</span></a>
+            <a class="bwh" href="#chia-se" style="display: flex; flex-direction: column; gap: 6px; text-decoration: none"><span style="display: block; overflow: clip"><img class="bw" src="assets/img/9b2ea9a542023743b3ca3a4431b9a68d.jpg" alt="Chia sẻ cùng sinh viên" style="display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 55% 50%"></span><span style="font-family: 'Lexend', sans-serif; font-size: 11px; letter-spacing: 1.5px">CHIA SẺ</span></a>
+          </div>
+          <span style="font-size: 14px; color: #555555">8 năm trong Marketing &amp; Thương mại điện tử.</span>
+        </div>
+        <div class="rise" style="animation-delay: .6s; display: flex; flex-direction: column; align-items: flex-start; gap: 20px; max-width: 320px">
+          <p style="margin: 0; font-size: 19px; line-height: 1.55">Mình làm marketing và thương mại điện tử, và ghi lại ở đây những gì mình làm đúng, làm sai, và vẫn đang học.</p>
+          <a class="btn" href="#ket-noi" style="height: 48px; display: inline-flex; align-items: center; padding: 0 22px; background: #111111; color: #F7F7F5; text-decoration: none; font-family: 'Lexend', sans-serif; font-size: 13px; letter-spacing: 2px; border: 1px solid #111111">GỬI LỜI CHÀO</a>
+        </div>
+      </div>
+    </section>
+
+    <section aria-label="Châm ngôn và con số" style="max-width: 1120px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 40px)">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); background: #FFFFFF; border: 1px solid #E4E4E1; border-radius: 24px; overflow: clip">
+        <div style="padding: 32px clamp(20px, 4vw, 40px); border-right: 1px solid #E4E4E1">
+          <div style="font-family: 'Lexend', sans-serif; font-size: 12px; letter-spacing: 2px; color: #555555">CHÂM NGÔN</div>
+          <div style="margin-top: 8px; font-family: 'Lexend', sans-serif; font-size: 26px; font-weight: 700; line-height: 1.25">1% BETTER<br>EVERY DAY</div>
+        </div>
+        <div style="padding: 32px clamp(20px, 4vw, 40px); border-right: 1px solid #E4E4E1">
+          <div style="font-family: 'Lexend', sans-serif; font-size: 56px; font-weight: 700; line-height: 1">8</div>
+          <div style="margin-top: 10px; font-size: 15px; color: #444444">năm trong Marketing và Thương mại điện tử</div>
+        </div>
+        <a href="https://www.facebook.com/tvnnhattran" style="padding: 32px clamp(20px, 4vw, 40px); text-decoration: none; display: block">
+          <div style="font-family: 'Lexend', sans-serif; font-size: 56px; font-weight: 700; line-height: 1">70K+</div>
+          <div style="margin-top: 10px; font-size: 15px; color: #444444">thành viên cộng đồng GenZ Chuyện Làm Ads ↗</div>
+        </a>
+      </div>
+    </section>
+
+    <div style="max-width: 1120px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 40px)">
+
+      <section id="gioi-thieu" style="padding: 150px 0 56px; display: flex; flex-wrap: wrap; gap: 40px 88px">
+        <div class="side" style="flex: 1 1 170px; position: sticky; top: 100px; align-self: flex-start; font-family: 'Lexend', sans-serif; font-size: 13px; letter-spacing: 2px">01 / GIỚI THIỆU</div>
+        <div style="flex: 999 1 560px; min-width: 0; max-width: 760px">
+          <h2 class="reveal" style="margin: 0 0 28px; font-size: clamp(30px, 4vw, 46px); font-weight: 600; line-height: 1.15; letter-spacing: -1px">8 năm xây dựng, vận hành và đồng hành cùng doanh nghiệp.</h2>
+          <p class="reveal" style="margin: 0 0 24px; font-size: 19px; color: #222222">Bạn đã bao giờ bị ai đó hỏi một câu mà nghe xong bạn không trả lời được liền, và câu hỏi đó cứ đi theo bạn mấy ngày, mấy tuần, thậm chí mấy tháng sau vẫn còn vang lên trong đầu những lúc bạn ở một mình chưa?</p>
+          <p class="reveal" style="margin: 0 0 24px; color: #333333">Mình từng bị như vậy. Có một bữa ngồi nhậu với ông anh chí cốt, hai anh em uống cũng khá rồi, câu chuyện bắt đầu đi vào mấy thứ sâu hơn bình thường, thì ảnh nhìn mình và hỏi một câu mà tới giờ mình vẫn nhớ nguyên văn. Mình ngồi đó cầm ly bia, nghĩ một hồi lâu mà không biết nói gì cho đàng hoàng, không phải vì mình không có ước mơ hay không có tham vọng, mà vì mình nhận ra bấy lâu nay mình cứ chạy, cứ làm, cứ nhảy từ thứ này sang thứ khác mà chưa bao giờ dừng lại tự hỏi mình câu đó một cách nghiêm túc.</p>
+          <blockquote class="reveal" style="margin: 36px 0; padding: 0 0 0 24px; border-left: 4px solid #111111; font-family: 'Lexend', sans-serif; font-size: clamp(22px, 2.8vw, 30px); font-weight: 700; line-height: 1.35">“10 NĂM, 20 NĂM NỮA, EM HÌNH DUNG EM ĐANG LÀ AI?”</blockquote>
+            <div id="aboutMore" class="swapA" hidden>
+              <p style="margin: 0 0 24px; color: #333333">Về nhà đêm đó mình nằm nghĩ khá lâu, và điều làm mình khó chịu nhất hóa ra không nằm ở chỗ mình chưa có câu trả lời, mà ở chỗ mình đã bận rộn suốt mấy năm liền mà chưa từng tự hỏi sự bận rộn đó đang dẫn mình đi đâu. Mình thử bỏ ra khỏi đầu hết những việc mình làm để người khác nhìn vào thấy mình giỏi, rồi đếm xem còn lại bao nhiêu việc mình làm vì mình thật lòng muốn trở thành một người như thế, và con số còn lại ít hơn mình tưởng rất nhiều.</p>
+              <p style="margin: 0 0 24px; color: #333333">Câu hỏi đêm đó thay đổi cách mình nhìn mọi thứ mình đang làm. Trước đó mình từng mất gần 1 tỷ vì khởi nghiệp theo kiểu thấy gì làm nấy, từng nhảy qua 4, 5 mô hình khác nhau chỉ trong 2 năm, từng nghĩ mình là cái rốn của vũ trụ và có thể làm được tất cả. Mình từng tin thứ mình thiếu là cơ hội, nhưng nhìn lại thì mình có quá nhiều cơ hội, và cái mình thiếu là sự tỉnh táo để nói không với phần lớn trong số đó, một bài học mà cái giá để hiểu được nó không hề rẻ.</p>
+              <p style="margin: 0 0 24px; color: #333333">Từ đó mình chỉ tập trung vào hai thứ là làm thật và kể thật. Mình không muốn trở thành một cái tên nổi trên mạng, mình muốn là người xây được thứ gì đó có giá trị, đủ để mai này nhìn lại không phải tự hỏi mấy năm qua mình đã làm gì với thời gian của mình. Xây Gendigi, vận hành dự án thương mại điện tử quốc tế ở LevelUp Việt Nam, chia sẻ với cộng đồng hơn 70.000 người, không phải vì mình giỏi hơn ai, mà vì mình tin hành trình của một người đang đi có thể giúp ích cho người khác cũng đang ở trên đường.</p>
+              <p style="margin: 0 0 24px; color: #333333">Đến giờ mình vẫn chưa có một câu trả lời trọn vẹn cho câu hỏi của ông anh năm đó, nhưng mình đã thôi sợ nó, và mỗi lần phải đưa ra một quyết định lớn, mình hay dừng lại vài phút để hỏi xem người mà mình muốn trở thành 10 năm nữa có gật đầu với lựa chọn này hay không, rồi mới làm.</p>
+            </div>
+          <button id="aboutBtn" type="button" aria-expanded="false" style="min-height: 44px; padding: 0 18px; border: 1px solid #111111; background: transparent; font-family: 'Lexend', sans-serif; font-size: 13px; letter-spacing: 1.5px; color: #111111; cursor: pointer">ĐỌC TIẾP CÂU CHUYỆN ↓</button>
+          <div class="reveal" style="margin-top: 48px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px">
+            <img class="bw" src="assets/img/db04cea70b10976eaef1575707136163.jpg" alt="Nhật Trần cụng ly cùng một người anh trong một buổi tối" style="display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 58%">
+            <img class="bw" src="assets/img/687bcb846dd7daa1711b7ae73d202977.jpg" alt="Nhật Trần chụp ảnh cùng người quen tại một buổi gala" style="display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 55% 45%">
+          </div>
+        </div>
+      </section>
+
+      <section aria-label="Vì sao có trang này" class="qsec" style="padding: 140px 0 120px">
+        <div style="font-family: 'Lexend', sans-serif; font-size: 13px; letter-spacing: 2px; margin-bottom: 32px">VÌ SAO CÓ TRANG NÀY</div>
+        <p id="q1" style="margin: 0 0 8px; font-size: clamp(24px, 3.4vw, 38px); font-weight: 500; line-height: 1.3; letter-spacing: -0.5px"></p>
+        <p id="q2" style="margin: 0; font-size: clamp(34px, 5.6vw, 72px); font-weight: 600; line-height: 1.12; letter-spacing: -2px"></p>
+        <div class="reveal" style="margin-top: 64px; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px">
+          <img class="bw" src="assets/img/7a823921348084d4d9cbcc1d9857fa9c.jpg" alt="Nhật Trần đứng cạnh bảng trắng, khoanh tay suy nghĩ trong buổi làm việc cùng đội ngũ" style="display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 62%">
+          <img class="bw" src="assets/img/e0343945c4cb1377e6b21038002d03fd.jpg" alt="Nhật Trần đứng một mình bên lan can, nhìn ra biển rộng" style="display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 46% 78%">
+        </div>
+      </section>
+
+      <section id="hanh-trinh" style="padding: 120px 0 56px; border-top: 1px solid #E4E4E1; display: flex; flex-wrap: wrap; gap: 40px 88px">
+        <div class="side" style="flex: 1 1 170px; position: sticky; top: 100px; align-self: flex-start; font-family: 'Lexend', sans-serif; font-size: 13px; letter-spacing: 2px">02 / HÀNH TRÌNH</div>
+        <div style="flex: 999 1 560px; min-width: 0; max-width: 760px">
+          <h2 class="reveal" style="margin: 0 0 10px; font-size: clamp(28px, 3.6vw, 42px); font-weight: 600; line-height: 1.2; letter-spacing: -1px; max-width: 760px">Mình không bắt đầu với một bản kế hoạch hoàn hảo. Mình bắt đầu bằng việc làm.</h2>
+          <p class="reveal" style="margin: 0 0 32px; font-size: 15px; color: #555555">Nếu vẽ hành trình của mình thành một đường, nó trông như thế này. Bấm vào từng điểm.</p>
+          <div class="reveal" style="position: relative; padding: 34px 4px 0">
+            <div style="position: relative; width: 100%; aspect-ratio: 600 / 220">
+              <svg aria-hidden="true" viewBox="0 0 600 220" preserveAspectRatio="none" style="position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible">
+                <path d="M40 180 C 90 180, 100 110, 140 110 C 180 110, 200 195, 240 195 C 280 195, 300 130, 340 130 C 380 130, 400 95, 440 95 C 480 95, 500 55, 540 55 L 540 220 L 40 220 Z" fill="#ECECE9"></path>
+                <path class="draw" pathLength="1" d="M40 180 C 90 180, 100 110, 140 110 C 180 110, 200 195, 240 195 C 280 195, 300 130, 340 130 C 380 130, 400 95, 440 95 C 480 95, 500 55, 540 55" fill="none" stroke="#111111" stroke-width="2.5" stroke-linecap="round" vector-effect="non-scaling-stroke"></path>
+                <path d="M540 55 C 560 55, 575 40, 592 26" fill="none" stroke="#9A9A9A" stroke-width="2" stroke-dasharray="4 6" stroke-linecap="round" vector-effect="non-scaling-stroke"></path>
+              </svg>
+              <span style="position: absolute; right: 0; top: calc(11.8% - 32px); font-family: 'Lexend', sans-serif; font-size: 12px; color: #555555">PHÍA TRƯỚC…</span>
+              <span style="position: absolute; left: calc(40% + 20px); top: 88.6%; transform: translateY(-50%); font-family: 'Lexend', sans-serif; font-size: 12px; font-weight: 700; white-space: nowrap">−1 TỶ</span>
+              <span style="position: absolute; left: 23.33%; top: calc(50% - 34px); transform: translateX(-50%); font-family: 'Lexend', sans-serif; font-size: 12px; color: #555555; white-space: nowrap">40TR+/THÁNG</span>
+              <div id="jDots" style="display: contents"></div>
+            </div>
+            <div aria-hidden="true" style="position: relative; height: 30px; margin-top: 12px">
+              <div id="jYears" style="display: contents"></div>
+            </div>
+          </div>
+          <div id="jStory" class="swapB" style="margin-top: 32px; display: flex; flex-wrap: wrap; gap: 28px; align-items: flex-start; border-top: 1px solid #E4E4E1; padding-top: 28px"></div>
+        </div>
+      </section>
+
+      <section id="quan-diem" style="padding: 120px 0 56px; border-top: 1px solid #E4E4E1; margin-top: 120px; display: flex; flex-wrap: wrap; gap: 40px 88px">
+        <div class="side" style="flex: 1 1 170px; position: sticky; top: 100px; align-self: flex-start; font-family: 'Lexend', sans-serif; font-size: 13px; letter-spacing: 2px">03 / QUAN ĐIỂM</div>
+        <div style="flex: 999 1 560px; min-width: 0; max-width: 760px">
+          <h2 class="reveal" style="margin: 0 0 28px; font-size: clamp(28px, 3.6vw, 42px); font-weight: 600; line-height: 1.2; letter-spacing: -1px; max-width: 760px">Những điều mình tin sau khi đã trả giá đủ để hiểu.</h2>
+          <div class="reveal" style="display: flex; flex-wrap: wrap; border: 1px solid #111111; border-radius: 20px; overflow: clip">
+            <div role="tablist" aria-label="Chủ đề quan điểm" style="flex: 1 1 220px; display: flex; flex-direction: column; border-right: 1px solid #111111">
+              <div id="bTabs" style="display: contents"></div>
+            </div>
+            <div role="tabpanel" style="flex: 999 1 360px; min-width: 0; padding: clamp(24px, 4vw, 40px); background: #111111; color: #F7F7F5">
+              <div id="bPanel" class="swapB" style="display: flex; flex-direction: column; gap: 16px"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="chuyen-mon" style="padding: 120px 0 56px; border-top: 1px solid #E4E4E1; margin-top: 120px; display: flex; flex-wrap: wrap; gap: 40px 88px">
+        <div class="side" style="flex: 1 1 170px; position: sticky; top: 100px; align-self: flex-start; font-family: 'Lexend', sans-serif; font-size: 13px; letter-spacing: 2px">04 / CHUYÊN MÔN</div>
+        <div style="flex: 999 1 560px; min-width: 0; max-width: 760px">
+          <h2 class="reveal" style="margin: 0 0 24px; font-size: clamp(28px, 3.6vw, 42px); font-weight: 600; line-height: 1.2; letter-spacing: -1px">Mỗi thứ mình biết đều đến từ một lần trả giá.</h2>
+          <div id="skills" style="border-top: 1px solid #111111">
+          </div>
+        </div>
+      </section>
+
+      <section id="chia-se" style="padding: 120px 0 56px; border-top: 1px solid #E4E4E1; margin-top: 120px">
+        <div style="display: flex; flex-wrap: wrap; gap: 40px 88px">
+          <div class="side" style="flex: 1 1 170px; font-family: 'Lexend', sans-serif; font-size: 13px; letter-spacing: 2px">05 / CHIA SẺ &amp; ĐÀO TẠO</div>
+          <div style="flex: 999 1 560px; min-width: 0; max-width: 760px">
+            <h2 class="reveal" style="margin: 0 0 22px; font-size: clamp(32px, 4.4vw, 54px); font-weight: 600; line-height: 1.1; letter-spacing: -1.5px">Từ phòng họp đến giảng đường.</h2>
+            <p class="reveal" style="margin: 0 0 24px; color: #333333">Chia sẻ là một trong những thứ mình thích nhất. Mỗi lần đứng trước một nhóm sinh viên hay một hội trường, mình có cảm giác mình đang được nói những điều mà hồi bằng tuổi các bạn, mình rất muốn có ai đó nói với mình. Hồi đó mình loay hoay, không biết bắt đầu từ đâu, không biết nên tin ai, và ước gì có một người đang thực sự làm ngồi xuống kể cho mình nghe chuyện thật.</p>
+            <p class="reveal" style="margin: 0 0 28px; color: #333333">Phong cách chia sẻ của mình luôn xoay quanh người nghe ngồi phía dưới. Mình không lên sân khấu để nói mình có gì, mình lên đó để giúp người ngồi dưới nhận ra một điều có giá trị mà họ mang về dùng được liền, và nếu xuống sân khấu mà không ai thay đổi cách nghĩ hay cách làm gì, thì với mình buổi chia sẻ đó chưa thành công.</p>
+          </div>
+        </div>
+        <div id="talkTable" class="reveal ptable" style="position: relative; height: clamp(560px, 74vw, 860px); background: #ECECE9; margin-top: 16px; border-radius: 28px">
+        </div>
+        <div style="margin-top: 12px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; font-family: 'Lexend', sans-serif; font-size: 12px; letter-spacing: 1px; color: #555555">
+          <span class="desk">KÉO ẢNH ĐỂ XẾP LẠI · CHẠM ĐỂ XEM LỚN</span>
+          <span class="mob">VUỐT NGANG ĐỂ XEM · CHẠM ĐỂ XEM LỚN</span>
+          <button type="button" class="desk" id="resetTalk" style="min-height: 40px; padding: 0 14px; border: 1px solid #111111; background: transparent; font: inherit; color: #111111; cursor: pointer">↺ XẾP LẠI</button>
+        </div>
+        <div class="reveal" style="margin-top: 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 32px">
+          <div>
+            <div style="font-family: 'Lexend', sans-serif; font-size: 12px; letter-spacing: 2px; margin-bottom: 12px">ĐÃ CHIA SẺ TẠI</div>
+            <div style="display: flex; flex-direction: column; border-top: 1px solid #E4E4E1; font-size: 15px">
+              <span style="padding: 10px 0; border-bottom: 1px solid #E4E4E1">Đại học Kinh tế, ĐH Đà Nẵng</span>
+              <span style="padding: 10px 0; border-bottom: 1px solid #E4E4E1">Đại học Đông Á</span>
+              <span style="padding: 10px 0; border-bottom: 1px solid #E4E4E1">Đại học Duy Tân</span>
+              <span style="padding: 10px 0; border-bottom: 1px solid #E4E4E1">Đại học FPT</span>
+              <span style="padding: 10px 0; border-bottom: 1px solid #E4E4E1">Hiệp hội Thương mại Điện tử Việt Nam (VECOM)</span>
+            </div>
+          </div>
+          <div>
+            <div style="font-family: 'Lexend', sans-serif; font-size: 12px; letter-spacing: 2px; margin-bottom: 12px">CHỦ ĐỀ THƯỜNG CHIA SẺ</div>
+            <div style="display: flex; flex-direction: column; border-top: 1px solid #E4E4E1; font-size: 15px">
+              <span style="padding: 10px 0; border-bottom: 1px solid #E4E4E1">AI ứng dụng trong marketing</span>
+              <span style="padding: 10px 0; border-bottom: 1px solid #E4E4E1">Performance Marketing thực chiến</span>
+              <span style="padding: 10px 0; border-bottom: 1px solid #E4E4E1">Thương mại điện tử</span>
+              <span style="padding: 10px 0; border-bottom: 1px solid #E4E4E1">Chuyển đổi số cho doanh nghiệp</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="dang-lam" style="padding: 120px 0 56px; border-top: 1px solid #E4E4E1; margin-top: 120px; display: flex; flex-wrap: wrap; gap: 40px 88px">
+        <div class="side" style="flex: 1 1 170px; position: sticky; top: 100px; align-self: flex-start; font-family: 'Lexend', sans-serif; font-size: 13px; letter-spacing: 2px">06 / ĐANG LÀM</div>
+        <div style="flex: 999 1 560px; min-width: 0; max-width: 760px">
+          <h2 class="reveal" style="margin: 0 0 24px; font-size: clamp(28px, 3.6vw, 42px); font-weight: 600; line-height: 1.2; letter-spacing: -1px">Ba thứ mình dành thời gian mỗi ngày.</h2>
+          <div style="display: flex; flex-direction: column; border-top: 1px solid #111111">
+            <article class="reveal bwh" style="display: flex; flex-wrap: wrap; gap: 20px 28px; padding: 24px 0; border-bottom: 1px solid #111111">
+              <img class="bw" src="assets/img/68abe4351f89346260ff23d5efe8d38a.jpg" alt="Nhật Trần trong áo Gendigi" style="flex: 0 0 160px; width: 160px; aspect-ratio: 1 / 1; object-fit: cover; object-position: 75% 35%">
+              <div style="flex: 1 1 280px">
+                <span style="font-family: 'Lexend', sans-serif; font-size: 12px; letter-spacing: 1.5px">FOUNDER &amp; CEO</span>
+                <h3 style="margin: 4px 0 6px; font-size: 21px; font-weight: 600">Gendigi · Growth Marketing Partner</h3>
+                <p style="margin: 0; font-size: 15px; color: #333333; line-height: 1.7">Dịch vụ marketing và tăng trưởng doanh thu cho doanh nghiệp. Mình và đội ngũ giúp khách hàng hiểu người mua, thiết kế offer đúng, và xây funnel chuyển đổi có thể đo lường. Không hứa hẹn phép màu, chỉ cam kết làm đúng quy trình.</p>
+              </div>
+            </article>
+            <article class="reveal bwh" style="display: flex; flex-wrap: wrap; gap: 20px 28px; padding: 24px 0; border-bottom: 1px solid #111111">
+              <img class="bw" src="assets/img/6c7005ffb845c5233f9db617e62835db.jpg" alt="Đội ngũ LevelUp Việt Nam" style="flex: 0 0 160px; width: 160px; aspect-ratio: 1 / 1; object-fit: cover; object-position: 50% 50%">
+              <div style="flex: 1 1 280px">
+                <span style="font-family: 'Lexend', sans-serif; font-size: 12px; letter-spacing: 1.5px">PROJECT MANAGER</span>
+                <h3 style="margin: 4px 0 6px; font-size: 21px; font-weight: 600">LevelUp Việt Nam · Thương mại điện tử quốc tế</h3>
+                <p style="margin: 0; font-size: 15px; color: #333333; line-height: 1.7">Quản lý đội ngũ và vận hành dự án bán hàng ra thị trường quốc tế. Đây là nơi mình thực chiến mỗi ngày, giải bài toán tăng trưởng trên đơn hàng thật, không phải trên slide.</p>
+              </div>
+            </article>
+            <article class="reveal bwh" style="display: flex; flex-wrap: wrap; gap: 20px 28px; padding: 24px 0; border-bottom: 1px solid #111111">
+              <img class="bw" src="assets/img/77c9d6d536e80409a191d2e39a67e4ce.jpg" alt="Laptop bên cửa kính nhìn ra Đà Nẵng một chiều mưa" style="flex: 0 0 160px; width: 160px; aspect-ratio: 1 / 1; object-fit: cover; object-position: 50% 60%">
+              <div style="flex: 1 1 280px">
+                <span style="font-family: 'Lexend', sans-serif; font-size: 12px; letter-spacing: 1.5px">CHIA SẺ</span>
+                <h3 style="margin: 4px 0 6px; font-size: 21px; font-weight: 600">Nội dung &amp; Thương hiệu cá nhân</h3>
+                <p style="margin: 0; font-size: 15px; color: #333333; line-height: 1.7">Viết về hành trình xây dựng, về marketing, về TMĐT, về những sai lầm mình đã mắc. Dành cho người đang làm giống mình, và nếu bạn đang xây gì đó mà thỉnh thoảng thấy lạc, có thể bạn sẽ thấy quen ở đây.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="ngoai-gio" style="padding: 120px 0 56px; border-top: 1px solid #E4E4E1; margin-top: 120px">
+        <div style="display: flex; flex-wrap: wrap; gap: 40px 88px">
+          <div class="side" style="flex: 1 1 170px; font-family: 'Lexend', sans-serif; font-size: 13px; letter-spacing: 2px">07 / NGOÀI GIỜ</div>
+          <div style="flex: 999 1 560px; min-width: 0; max-width: 760px">
+            <h2 class="reveal" style="margin: 0 0 32px; font-size: clamp(30px, 4vw, 48px); font-weight: 600; line-height: 1.15; letter-spacing: -1px">Phía sau những dự án là một người rất bình thường.</h2>
+            <div class="reveal" style="max-width: 760px">
+              <h3 style="margin: 0 0 10px; font-family: 'Lexend', sans-serif; font-size: 18px; font-weight: 700; letter-spacing: 1px">01 — THÍCH KHÁM PHÁ</h3>
+              <p style="margin: 0 0 14px; color: #333333">Mình thích đi, và thích nhất là những chuyến đi không có lịch trình quá kín, vì chỉ khi đứng ở một nơi hoàn toàn lạ, không ai biết mình là ai và cũng không có tin nhắn nào bắt buộc phải trả lời ngay, mình mới nghe rõ được suy nghĩ của chính mình.</p>
+              <p style="margin: 0; color: #333333">Nhiều chuyện mình loay hoay cả tuần ở văn phòng, đến lúc ngồi trước một vách núi hay một bờ biển xa nhà thì tự nhiên thấy nó nhỏ lại, vì mình đang nhìn nó từ một khoảng cách đủ xa để biết cái gì quan trọng và cái gì chỉ đang làm mình lo. Khám phá với mình còn là cách giữ lại cái tò mò của người mới bắt đầu, thứ mà càng làm lâu trong một ngành thì càng dễ đánh rơi lúc nào không hay.</p>
+            </div>
+          </div>
+        </div>
+        <div id="tripTable" class="reveal ptable" style="position: relative; margin-top: 36px; height: clamp(560px, 70vw, 780px); background: #ECECE9; border-radius: 28px">
+        </div>
+        <div style="margin-top: 12px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; font-family: 'Lexend', sans-serif; font-size: 12px; letter-spacing: 1px; color: #555555">
+          <span class="desk">KÉO ẢNH ĐỂ BÀY LẠI BÀN ẢNH</span>
+          <span class="mob">VUỐT NGANG ĐỂ XEM THÊM</span>
+          <button type="button" class="desk" id="resetTrip" style="min-height: 40px; padding: 0 14px; border: 1px solid #111111; background: transparent; font: inherit; color: #111111; cursor: pointer">↺ XẾP LẠI</button>
+        </div>
+        <div class="reveal bwh" style="margin-top: 72px; display: flex; flex-wrap: wrap-reverse; gap: 32px 56px; align-items: center">
+          <div style="flex: 1.2 1 320px">
+            <h3 style="margin: 0 0 10px; font-family: 'Lexend', sans-serif; font-size: 18px; font-weight: 700; letter-spacing: 1px">02 — HƯỚNG VỀ GIA ĐÌNH</h3>
+            <p style="margin: 0 0 14px; color: #333333">Đi nhiều, gặp nhiều người, làm nhiều dự án, nhưng nơi làm mình thấy yên nhất vẫn là nhà, là một bữa cơm có đủ mặt mọi người, nơi không ai quan tâm tháng này doanh thu bao nhiêu hay mình vừa đứng nói ở hội trường nào, mà chỉ hỏi dạo này con ăn uống ra sao, ngủ có đủ giấc không.</p>
+            <p style="margin: 0; color: #333333">Có những giai đoạn mọi thứ ngoài kia đi xuống, mình nhận ra gia đình là chỗ duy nhất mình không cần phải chứng minh điều gì, và chính cảm giác được thương mà không kèm điều kiện đó lại cho mình đủ sức để quay ra làm tiếp. Càng lớn mình càng hiểu phần lớn những gì mình đang cố xây bên ngoài, suy cho cùng cũng là để những người ở nhà được sống nhẹ nhõm hơn một chút, và để mỗi lần về mình có thể ngồi lâu hơn mà không phải vội vàng nhìn điện thoại.</p>
+          </div>
+          <img class="bw" src="assets/img/45944dcf185061b887a08d517cb9d3e9.jpg" alt="Nhật Trần cùng gia đình trước tháp Phước Duyên, chùa Thiên Mụ" style="flex: 1 1 260px; display: block; width: 100%; max-width: 420px; aspect-ratio: 3 / 4; object-fit: cover; object-position: 50% 60%">
+        </div>
+      </section>
+
+      <section id="hop-tac" style="padding: 120px 0 56px; border-top: 1px solid #E4E4E1; margin-top: 120px; display: flex; flex-wrap: wrap; gap: 40px 88px">
+        <div class="side" style="flex: 1 1 170px; position: sticky; top: 100px; align-self: flex-start; font-family: 'Lexend', sans-serif; font-size: 13px; letter-spacing: 2px">08 / HỢP TÁC</div>
+        <div style="flex: 999 1 560px; min-width: 0; max-width: 760px">
+          <h2 class="reveal" style="margin: 0 0 28px; font-size: clamp(28px, 3.6vw, 42px); font-weight: 600; line-height: 1.2; letter-spacing: -1px">Nếu bạn đang xây gì đó và cần một người đã từng đi qua.</h2>
+          <div id="svcGrid" class="reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 16px">
+          </div>
+          <p style="margin: 20px 0 0; font-size: 14px; color: #6B6B6B">Bấm vào từng ô để xem chi tiết.</p>
+        </div>
+      </section>
+    </div>
+
+    <section id="ket-noi" style="margin: 150px auto 24px; width: calc(100% - 32px); max-width: 1240px; border-radius: 32px; overflow: clip; background: #111111; color: #F7F7F5">
+      <div style="max-width: 1120px; margin: 0 auto; padding: clamp(56px, 8vw, 110px) clamp(20px, 4vw, 40px) 48px">
+        <div style="font-family: 'Lexend', sans-serif; font-size: 13px; letter-spacing: 2px; color: #BDBDBD">09 / KẾT NỐI</div>
+        <h2 class="reveal" style="margin: 20px 0 28px; font-family: 'Lexend', sans-serif; font-size: clamp(40px, 8vw, 116px); font-weight: 500; line-height: 1.08; letter-spacing: -0.03em">MỘT LY<br>CÀ PHÊ?</h2>
+        <div style="display: flex; flex-wrap: wrap; gap: 40px 64px; align-items: flex-start">
+          <div style="flex: 1.3 1 340px; max-width: 680px">
+            <p style="margin: 0 0 16px; color: #DADAD6">Có thể bạn đang ở đúng cái giai đoạn mà mình từng đi qua, đang xây một thứ chưa chắc sẽ thành, đang phân vân giữa hai lựa chọn mà ai hỏi cũng khuyên một kiểu, hoặc đơn giản là đọc tới đây và thấy có vài đoạn giống mình đến lạ. Nếu vậy thì mình nghĩ tụi mình nên ngồi với nhau một buổi cà phê, không cần chuẩn bị gì nhiều, không cần một dự án lớn hay một lời đề nghị hợp tác đàng hoàng, chỉ cần bạn mang theo điều bạn đang trăn trở và mình sẽ kể lại những gì mình từng thấy khi đứng ở chỗ tương tự.</p>
+            <p style="margin: 0; color: #DADAD6">Mình không hứa sẽ có sẵn câu trả lời cho bạn, vì nhiều khi chính mình cũng còn đang tìm, nhưng mình hứa sẽ nghe hết câu chuyện của bạn trước khi nói bất cứ điều gì, và nói thật những gì mình nghĩ, kể cả khi đó không phải điều dễ nghe nhất. Mình ở Đà Nẵng, bạn ở xa thì một cuộc gọi Zalo cũng được.</p>
+          </div>
+          <div style="flex: 1 1 300px; display: flex; flex-direction: column; border-top: 1px solid #F7F7F5">
+            <a href="https://zalo.me/0382885519" style="display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 18px 0; border-bottom: 1px solid #3A3A3A; color: #F7F7F5; text-decoration: none">
+              <span style="display: flex; flex-direction: column; line-height: 1.3"><span style="font-family: 'Lexend', sans-serif; font-size: 12px; letter-spacing: 2px; color: #BDBDBD">ZALO</span><span style="font-family: 'Lexend', sans-serif; font-size: clamp(22px, 3vw, 28px); font-weight: 700; white-space: nowrap">0382 885 519</span></span>
+              <span aria-hidden="true" style="font-size: 22px">↗</span>
+            </a>
+            <a href="https://www.facebook.com/tvnnhattran" style="display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 18px 0; border-bottom: 1px solid #3A3A3A; color: #F7F7F5; text-decoration: none">
+              <span style="display: flex; flex-direction: column; line-height: 1.3"><span style="font-family: 'Lexend', sans-serif; font-size: 12px; letter-spacing: 2px; color: #BDBDBD">FACEBOOK</span><span style="font-size: 17px">facebook.com/tvnnhattran</span></span>
+              <span aria-hidden="true" style="font-size: 22px">↗</span>
+            </a>
+            <a href="mailto:tvn.nhattran@gmail.com" style="display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 18px 0; border-bottom: 1px solid #3A3A3A; color: #F7F7F5; text-decoration: none">
+              <span style="display: flex; flex-direction: column; line-height: 1.3"><span style="font-family: 'Lexend', sans-serif; font-size: 12px; letter-spacing: 2px; color: #BDBDBD">EMAIL</span><span style="font-size: 17px">tvn.nhattran@gmail.com</span></span>
+              <span aria-hidden="true" style="font-size: 22px">↗</span>
+            </a>
+          </div>
+        </div>
+        <div aria-hidden="true" style="margin-top: 96px; font-family: 'Lexend', sans-serif; font-weight: 500; font-size: clamp(42px, 11.6vw, 160px); line-height: 1.1; letter-spacing: -0.03em; color: #2A2A2A; white-space: nowrap; text-align: center">NHẬT TRẦN</div>
+        <div style="margin-top: 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; font-family: 'Lexend', sans-serif; font-size: 12px; letter-spacing: 1.5px; color: #8A8A8A">
+          <span>© 2026 NHATTRAN.LIFE</span>
+          <span>1% BETTER EVERY DAY</span>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="svcModal"></div>
+  <div id="lightbox"></div>
+</div>
+<script>
+(function () {
+  'use strict';
+  var $ = function (id) { return document.getElementById(id); };
+  var esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
+  var flip = function (el) { if (!el) return; var a = el.classList.contains('swapA'); el.classList.remove('swapA', 'swapB'); void el.offsetWidth; el.classList.add(a ? 'swapB' : 'swapA'); };
+
+  const PH = {
+      talk: [
+        { id: 't1', src: 'assets/img/9b2ea9a542023743b3ca3a4431b9a68d.jpg', cap: 'Sau buổi chia sẻ “3 điều anh sẽ làm nếu được quay lại”', ratio: 'aspect-ratio: 2.4 / 1', x: 2, y: 2, w: 46, r: -2 },
+        { id: 't8', src: 'assets/img/bbeedebcba9ab0fb4cc3c27223e4ef2a.jpg', cap: 'Unitour 2026 cùng VECOM: Thương mại điện tử đang đi về đâu?', ratio: 'aspect-ratio: 3 / 2; object-position: 30% 40%', x: 49, y: 3, w: 27, r: 3 },
+        { id: 't9', src: 'assets/img/142bf286f9f1d24a06483c705d302ef3.jpg', cap: 'Diễn giả khách mời: “Profit First, rồi mới AI First”', ratio: 'aspect-ratio: 4 / 3', x: 74, y: 8, w: 24, r: -3 },
+        { id: 't10', src: 'assets/img/db27a088bebcae89136a17082f55d78b.jpg', cap: 'Tổng quan Thương mại điện tử và xu hướng mới trong kinh doanh số', ratio: 'aspect-ratio: 3 / 2', x: 20, y: 28, w: 30, r: 2 },
+        { id: 't11', src: 'assets/img/b912a70c8a30bb03022d28db7d88890f.jpg', cap: 'Phiên thảo luận cùng VECOM tại Đại học Kinh tế, ĐH Đà Nẵng', ratio: 'aspect-ratio: 3 / 2', x: 52, y: 32, w: 30, r: -2 },
+        { id: 't3', src: 'assets/img/ec87589993c056b9c90f4436e684e3cd.jpg', cap: 'Social & Affiliate Global Summit cùng Accesstrade', ratio: 'aspect-ratio: 2 / 3; object-position: 50% 30%', x: 2, y: 30, w: 16, r: -4 },
+        { id: 't2', src: 'assets/img/eb8f5e51864c28ae8ad585166b03056f.jpg', cap: 'Chia sẻ về AI cho sinh viên Đại học Đông Á', ratio: 'aspect-ratio: 4 / 3', x: 80, y: 36, w: 19, r: 4 },
+        { id: 't4', src: 'assets/img/c676f6ccf224d8ba514b85e882e291d4.jpg', cap: 'Talkshow cùng MiB tại Đại học Kinh tế, ĐH Đà Nẵng', ratio: 'aspect-ratio: 3 / 2', x: 3, y: 62, w: 28, r: 2 },
+        { id: 't5', src: 'assets/img/6a93a46d8b09978e667e88ead3d43711.jpg', cap: 'Một buổi chia sẻ trên sân khấu', ratio: 'aspect-ratio: 3 / 2; object-position: 50% 30%', x: 33, y: 58, w: 28, r: -3 },
+        { id: 't6', src: 'assets/img/907fb8837c117df9f4567f24e71e4268.jpg', cap: 'Diễn đàn Sinh viên Vượt giới hạn số, VECOM × Duy Tân', ratio: 'aspect-ratio: 3 / 2; object-position: 50% 70%', x: 64, y: 64, w: 28, r: 2 },
+        { id: 't7', src: 'assets/img/e1b18cdad7bdf9770b3fa83dac9628ff.jpg', cap: 'Khoa Marketing, Đại học Đông Á', ratio: 'aspect-ratio: 3 / 2', x: 40, y: 78, w: 24, r: -2 }
+      ],
+      trip: [
+        { id: 'r1', src: 'assets/img/db3308f50f0417901f5ad588e1220d26.jpg', cap: 'HÀ GIANG', ratio: 'aspect-ratio: 3 / 4', x: 3, y: 4, w: 22, r: -5 },
+        { id: 'r2', src: 'assets/img/66523ad251eeecd5e5d2b2a7bc9b2831.jpg', cap: 'KUALA LUMPUR', ratio: 'aspect-ratio: 3 / 4', x: 28, y: 1, w: 22, r: 3 },
+        { id: 'r3', src: 'assets/img/106add564394c2cb89fed93b82e4d62a.jpg', cap: 'NUSA PENIDA', ratio: 'aspect-ratio: 4 / 3', x: 58, y: 4, w: 34, r: 5 },
+        { id: 'r4', src: 'assets/img/520f9816333cb01c35d7dab78fe03938.jpg', cap: 'MÙA HOA ĐÀO', ratio: 'aspect-ratio: 3 / 4', x: 74, y: 38, w: 20, r: -4 },
+        { id: 'r5', src: 'assets/img/518a71959f63da9ac27cc60da0b4392b.jpg', cap: 'LƯNG CHỪNG ĐÈO', ratio: 'aspect-ratio: 3 / 4', x: 5, y: 46, w: 20, r: 4 },
+        { id: 'r6', src: 'assets/img/beb5f5198fd3d2521375e57b8420320a.jpg', cap: 'MỘT NGÀY NHIỀU MÂY', ratio: 'aspect-ratio: 3 / 4', x: 31, y: 40, w: 21, r: -3 },
+        { id: 'r7', src: 'assets/img/0fdc781b23ff1273a3f10ec6f7c0d779.jpg', cap: 'CHIỀU NẮNG', ratio: 'aspect-ratio: 3 / 4', x: 53, y: 52, w: 20, r: 3 },
+        { id: 'r8', src: 'assets/img/48e5a3d471f3df0ba5fe8b02f9560c72.jpg', cap: 'NHÀ ĐÁ VÙNG CAO', ratio: 'aspect-ratio: 4 / 3; object-position: 60% 40%', x: 18, y: 68, w: 30, r: -2 }
+      ]
+};
+
+  /* ---------- Giới thiệu: đọc tiếp ---------- */
+  var aboutBtn = $('aboutBtn'), aboutMore = $('aboutMore');
+  aboutBtn.addEventListener('click', function () {
+    var open = aboutMore.hidden;
+    aboutMore.hidden = !open;
+    if (open) flip(aboutMore);
+    aboutBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    aboutBtn.textContent = open ? 'THU GỌN ↑' : 'ĐỌC TIẾP CÂU CHUYỆN ↓';
+  });
+
+  /* ---------- Câu quote sáng dần theo cuộn ---------- */
+  var s1 = 'Mình không chia sẻ vì mình đã đến đích.';
+  var s2 = 'Mình chia sẻ vì những gì mình vấp trên đường có thể giúp người khác đi nhanh hơn.';
+  var n1 = s1.split(' ').length, total = n1 + s2.split(' ').length;
+  var words = function (text, to, marks, offset) {
+    return text.split(' ').map(function (t, i) {
+      var a = 14 + (offset + i) * (40 / total);
+      return '<span class="lw' + (marks[t] ? ' mk' : '') + '" style="--to: ' + to + '; animation-range: cover ' + a.toFixed(1) + '% cover ' + (a + 6).toFixed(1) + '%">' + esc(t) + ' </span>';
+    }).join('');
+  };
+  $('q1').innerHTML = words(s1, '#8A8A8A', {}, 0);
+  $('q2').innerHTML = words(s2, '#111111', { 'vấp': 1, 'đi': 1, 'nhanh': 1, 'hơn.': 1 }, n1);
+
+  /* ---------- Hành trình ---------- */
+  var jData = [
+      { year: '2019', x: 40, y: 180, title: 'Bắt đầu bước vào ngành marketing', chip: 'TỪ SỐ 0', body: 'Chưa biết gì nhiều, chỉ biết mình thích marketing và muốn làm trong lĩnh vực này. Đây là năm mình bắt đầu học mọi thứ từ con số 0, chủ yếu bằng cách tự làm, tự sai rồi tự sửa.', lesson: 'Cách học nhanh nhất mình biết là bắt tay vào làm trước khi thấy mình sẵn sàng.' },
+      { year: '2022', x: 140, y: 110, title: 'Năm mình nghĩ vậy là đã thành công rồi', chip: 'DIGITAL MARKETING LEADER', body: 'Mình được nhận vào làm Digital Marketing Leader cho một công ty dược ở Mỹ, có thời điểm nhận lương hơn 40 triệu mỗi tháng, và thú thật lúc đó mình nghĩ như vậy là đã thành công rồi. Cũng trong năm này, khoa mình từng học mời mình quay về thỉnh giảng môn Digital Ads, đứng trên đúng giảng đường mà vài năm trước mình còn ngồi phía dưới. Song song đó, mình lập cộng đồng GenZ Chuyện Làm Ads để chia sẻ về performance marketing cho người trẻ, một cộng đồng lớn lên nhờ nội dung thật từ người đang làm, đến nay đã hơn 70.000 thành viên.', lesson: 'Thành công đến sớm dễ làm mình tưởng mình đã hiểu hết, và năm sau đó cho mình thấy điều ngược lại.' },
+      { year: '2023', x: 240, y: 195, dip: true, title: 'Năm mình nghĩ mình là cái rốn của vũ trụ', chip: 'MẤT GẦN 1 TỶ', body: 'Giai đoạn này mình nghĩ mình làm được tất cả. Trước đó mình đã kiếm được khá nhiều tiền, và cảm giác chiến thắng khiến mình mù quáng, nhảy vào đủ thứ, đầu tư lung tung, để rồi mất gần 1 tỷ tiền khởi nghiệp. Đây là bài học đắt nhất nhưng cũng đáng giá nhất của mình.', lesson: 'Biết mình không giỏi mọi thứ, và thừa nhận điều đó không phải là yếu đuối.' },
+      { year: '2024', x: 340, y: 130, img: 'assets/img/68abe4351f89346260ff23d5efe8d38a.jpg', imgAlt: 'Nhật Trần trong áo Gendigi đứng chia sẻ trên sân khấu', imgRatio: 'aspect-ratio: 4 / 5; object-position: 75% 40%', title: 'Thành lập Gendigi', chip: 'XÂY LẠI TỪ ĐẦU', body: 'Sau cú ngã năm trước, mình xây lại từ đầu nhưng lần này với tư duy khác. Gendigi là công ty marketing được xây trên nền tảng hệ thống, không dựa vào may mắn hay cảm hứng nhất thời, và mỗi quyết định đều phải đi qua một câu hỏi.', lesson: '“Cái này có đo lường được không?”' },
+      { year: '2025', x: 440, y: 95, title: 'Thử, thắng, và thua', chip: 'GIẢI THƯỞNG THÀNH PHỐ', body: 'Mình thử một số mô hình mới. Có cái thành công và được nhận giải thưởng của thành phố, có cái thất bại và phải dừng lại giữa chừng.', lesson: 'Không phải ý tưởng nào cũng cần chạy đến cùng, biết dừng đúng lúc cũng là một kỹ năng.' },
+      { year: '2026', x: 540, y: 55, img: 'assets/img/6c7005ffb845c5233f9db617e62835db.jpg', imgAlt: 'Nhật Trần cùng đội ngũ LevelUp Việt Nam tại gala dinner Together 2026', imgRatio: 'aspect-ratio: 4 / 3; object-position: 50% 55%', title: 'Dấn thân vào thương mại điện tử quốc tế cùng LevelUp Việt Nam', chip: 'HIỆN TẠI', body: 'Cơ duyên đưa mình đến với LevelUp Việt Nam ở vai trò Project Manager, vận hành dự án thương mại điện tử bán ra thế giới. Mỗi ngày là một bài toán mới, và chưa bài nào giải được bằng lý thuyết.', lesson: 'Thứ dạy mình nhiều nhất bây giờ là những đơn hàng thật.' }
+  ];
+  var J = jData.length - 1;
+  $('jDots').innerHTML = jData.map(function (j, i) {
+    return '<button type="button" data-j="' + i + '" aria-label="' + esc('Năm ' + j.year + ': ' + j.title) + '" style="position: absolute; width: 44px; height: 44px; transform: translate(-50%, -50%); border: 0; background: transparent; cursor: pointer; display: flex; align-items: center; justify-content: center; padding: 0; left: ' + (j.x / 6).toFixed(2) + '%; top: ' + (j.y / 2.2).toFixed(2) + '%"><span style="display: block; border-radius: 50%; box-sizing: border-box; transition: all .35s cubic-bezier(.2,.7,.2,1)"></span></button>';
+  }).join('');
+  $('jYears').innerHTML = jData.map(function (j) {
+    return '<span style="position: absolute; transform: translateX(-50%); font-family: \'Lexend\', sans-serif; font-size: 14px; transition: color .3s; left: ' + (j.x / 6).toFixed(2) + '%">' + j.year + '</span>';
+  }).join('');
+  function renderJ(animate) {
+    var dots = $('jDots').children, yrs = $('jYears').children;
+    jData.forEach(function (j, i) {
+      var on = J === i, past = i <= J, dot;
+      if (j.dip) dot = on ? 'width: 22px; height: 22px; background: #F7F7F5; border: 5px solid #111111; box-shadow: 0 0 0 6px #DADAD6' : 'width: 16px; height: 16px; background: #F7F7F5; border: 3px solid #111111';
+      else dot = on ? 'width: 20px; height: 20px; background: #111111; border: 4px solid #F7F7F5; box-shadow: 0 0 0 6px #DADAD6' : (past ? 'width: 12px; height: 12px; background: #111111; border: 2px solid #F7F7F5' : 'width: 12px; height: 12px; background: #F7F7F5; border: 2px solid #9A9A9A');
+      dots[i].setAttribute('aria-pressed', on ? 'true' : 'false');
+      dots[i].firstChild.style.cssText = 'display: block; border-radius: 50%; box-sizing: border-box; transition: all .35s cubic-bezier(.2,.7,.2,1); ' + dot;
+      yrs[i].style.color = on ? '#111111' : '#9A9A9A';
+      yrs[i].style.fontWeight = on ? '700' : '400';
+    });
+    var c = jData[J], nextI = (J + 1) % jData.length;
+    var nextLabel = nextI === 0 ? '↺ XEM LẠI TỪ 2019' : 'TIẾP THEO: ' + jData[nextI].year + ' →';
+    var el = $('jStory');
+    el.innerHTML =
+      '<div style="flex: 1.5 1 300px; min-width: 0">' +
+        '<div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 16px; margin-bottom: 8px">' +
+          '<span style="font-family: \'Lexend\', sans-serif; font-weight: 700; font-size: clamp(44px, 6vw, 64px); line-height: 1">' + c.year + '</span>' +
+          '<span style="padding: 3px 12px; border: 1px solid #111111; border-radius: 999px; font-family: \'Lexend\', sans-serif; font-size: 12px; letter-spacing: 1px">' + esc(c.chip) + '</span>' +
+        '</div>' +
+        '<h3 style="margin: 0 0 12px; font-size: clamp(22px, 2.6vw, 28px); font-weight: 600; line-height: 1.3">' + esc(c.title) + '</h3>' +
+        '<p style="margin: 0 0 24px; color: #333333">' + esc(c.body) + '</p>' +
+        '<p style="margin: 0; padding: 16px 20px; border-radius: 14px; background: #111111; color: #F7F7F5; font-size: 16px; line-height: 1.6"><span style="font-family: \'Lexend\', sans-serif; font-size: 12px; letter-spacing: 1.5px; margin-right: 10px">BÀI HỌC</span>' + esc(c.lesson) + '</p>' +
+        '<button type="button" data-jnext="' + nextI + '" style="margin-top: 14px; min-height: 44px; padding: 0; border: 0; background: transparent; font-family: \'Lexend\', sans-serif; font-size: 13px; letter-spacing: 1px; color: #111111; cursor: pointer; text-decoration: underline; text-underline-offset: 6px">' + nextLabel + '</button>' +
+      '</div>' +
+      (c.img ? '<img class="bw" src="' + c.img + '" alt="' + esc(c.imgAlt || '') + '" style="flex: 1 1 220px; display: block; width: 100%; max-width: 360px; object-fit: cover; ' + (c.imgRatio || '') + '">' : '');
+    if (animate) flip(el);
+  }
+  renderJ(false);
+
+  /* ---------- Quan điểm ---------- */
+  var bData = [
+      { label: 'Về marketing', core: 'Người chi nhiều tiền nhất không phải người thắng, người hiểu khách hàng rõ nhất mới là.', body: 'Mình đã tốn không ít tiền chạy ads trước khi thực sự hiểu điều này. Marketing bắt đầu từ việc hiểu tại sao người ta mua, không phải từ việc bấm nút “Boost Post.”' },
+      { label: 'Về xây dựng', core: 'Chọn một hướng rồi đi tới cùng, thay vì chạy theo cơ hội tiếp theo.', body: 'Bắt đầu thì ai cũng biết, cái khó là tiếp tục khi chưa thấy kết quả. Mình đã từng nhảy qua 4, 5 mô hình khác nhau trong 2 năm đầu, mỗi cái đều có lý do rất hay để bắt đầu, và cũng có lý do rất hay để bỏ.' },
+      { label: 'Về cuộc đời', core: 'Cuộc đời là quá trình mình trở thành ai trong lúc đi, không phải cuộc đua xem ai tới đích trước.', body: 'Mình từng nghĩ tuổi này phải đạt được cái gì đó to lớn, phải chứng minh được gì đó với mọi người. Có những giai đoạn mình kiếm được rất nhiều tiền nhưng không hạnh phúc, và có giai đoạn mình mất gần hết nhưng lại học được nhiều nhất. Giá trị của một chặng đường nằm ở việc mình có trung thực với bản thân trong suốt quá trình đó hay không.' },
+      { label: 'Về mối quan hệ', core: 'Chọn người đi cùng quan trọng hơn chọn con đường.', body: 'Mình tin mình là trung bình cộng của 5 người mình dành thời gian nhiều nhất. Câu này nghe cũ rồi, nhưng nhìn lại mấy năm qua, những lúc mình đi lên thường là lúc mình ở cạnh những người đang xây dựng thứ gì đó nghiêm túc, và những lúc đi xuống thường là lúc mình ở trong môi trường không ai thúc đẩy ai.' },
+      { label: 'Về mindset làm việc', core: '“Cái gì có thể giết kế hoạch này?”', body: 'Phần lớn quyết định tệ của mình đến từ việc chỉ tưởng tượng kịch bản thành công, nên bây giờ trước khi làm gì mình hỏi câu này trước, và nó đã cứu mình nhiều lần hơn bất kỳ kế hoạch nào. Thêm một điều nữa là đừng ra quyết định quan trọng lúc đang hưng phấn hoặc đang thất vọng, vì cả hai trạng thái đó đều không cho mình thấy bức tranh thật.' },
+      { label: 'Về con người', core: 'Đặt đúng người vào đúng chỗ, thay vì ép một người làm tất cả.', body: 'Không ai giỏi mọi thứ. Đội ngũ tốt không cần ai hoàn hảo, chỉ cần những người bổ sung cho nhau và đủ tôn trọng nhau để nói thật khi cần.' }
+  ];
+  var B = 0;
+  $('bTabs').innerHTML = bData.map(function (b, i) {
+    return '<button type="button" role="tab" data-b="' + i + '" style="min-height: 52px; display: flex; align-items: center; gap: 14px; padding: 8px 18px; border: 0; border-bottom: 1px solid #E4E4E1; font: inherit; font-size: 15px; text-align: left; cursor: pointer; transition: background .2s, color .2s"><span style="font-family: \'Lexend\', sans-serif; font-size: 12px">0' + (i + 1) + '</span>' + esc(b.label) + '</button>';
+  }).join('');
+  function renderB(animate) {
+    var tabs = $('bTabs').children;
+    for (var i = 0; i < tabs.length; i++) {
+      var on = i === B;
+      tabs[i].setAttribute('aria-selected', on ? 'true' : 'false');
+      tabs[i].style.background = on ? '#111111' : 'transparent';
+      tabs[i].style.color = on ? '#F7F7F5' : '#111111';
+    }
+    var b = bData[B];
+    var el = $('bPanel');
+    el.innerHTML =
+      '<span style="font-family: \'Lexend\', sans-serif; font-size: 12px; letter-spacing: 2px; color: #BDBDBD">0' + (B + 1) + ' · ' + esc(b.label.toUpperCase()) + '</span>' +
+      '<p style="margin: 0; font-size: clamp(22px, 2.8vw, 30px); font-weight: 600; line-height: 1.3">' + esc(b.core) + '</p>' +
+      '<p style="margin: 0; font-size: 15px; line-height: 1.75; color: #CFCFCB">' + esc(b.body) + '</p>';
+    if (animate) flip(el);
+  }
+  renderB(false);
+
+  /* ---------- Chuyên môn ---------- */
+  var kData = [
+      { title: 'Tâm lý người mua & Thiết kế Offer', body: 'Lý do lớn nhất khiến mình gắn bó với marketing và thương mại điện tử là vì mình luôn tò mò về hành vi mua hàng thật sự của người dùng, điều gì khiến một người quyết định bấm mua ngay, và điều gì khiến họ chần chừ rồi lặng lẽ rời đi. Mình là người rất thích tìm hiểu và nắm bắt tâm lý con người, nên với mình, ngồi đọc từng comment, từng tin nhắn hỏi hàng chưa bao giờ là việc nhàm chán. Năm đầu chạy ads, mình cứ nghĩ sản phẩm tốt thì bán được, và phải tới khi hiểu người mua cần gì và sợ gì, cách mình thiết kế offer mới thay đổi hoàn toàn.' },
+      { title: 'Performance Marketing & Funnel Thinking', body: 'Mình đã burn đủ tiền để biết chạy ads không phải là đặt ngân sách rồi cầu nguyện. Mỗi đồng phải đo lường được, mỗi bước trong funnel phải biết chuyện gì đang xảy ra. Mình học điều này từ những tháng ngồi đọc data lúc 2 giờ sáng, cố hiểu tại sao traffic cao mà không ai mua, và giờ mình nhìn mọi thứ theo cách đó, từ lúc khách hàng chưa biết mình là ai cho đến lúc họ trả tiền.' },
+      { title: 'Thương mại điện tử Global', body: 'Bán hàng ra thị trường quốc tế nghe rất oai, nhưng thực tế là hàng trăm vấn đề nhỏ cần giải mỗi ngày, từ logistics, payment, chăm sóc khách hàng ở múi giờ khác cho đến làm content cho một thị trường mình chưa từng sống. Mình học từng thứ một, phần lớn bằng cách làm sai trước rồi sửa.' },
+      { title: 'System Thinking', body: 'Giai đoạn đầu mình làm một mình gần hết mọi thứ và nghĩ đó là chăm chỉ. Đến khi quy mô lớn hơn, mình nhận ra làm nhiều khác với làm đúng, và nếu mọi thứ phải đi qua mình thì mình chính là nút thắt cổ chai của cả hệ thống. System Thinking là khi mình học cách xây quy trình để mọi người biết cần làm gì mà không cần hỏi mình mỗi ngày, và xây dashboard để nhìn được toàn bộ bức tranh.' },
+      { title: 'Inspire', body: 'Mình không gọi mình là leader theo kiểu truyền thống, vì mình tin dẫn dắt không phải là nói cho người khác làm gì. Điều mình cố làm mỗi ngày là tạo ra một môi trường mà mọi người tự muốn cố gắng, tự thấy ý nghĩa trong công việc và tự biết mình đang đóng góp vào thứ gì, điều mình học được từ chính những người đã truyền cảm hứng cho mình.' }
+  ];
+  var K = 0;
+  function renderK() {
+    $('skills').innerHTML = kData.map(function (k, i) {
+      var open = K === i;
+      return '<div style="border-bottom: 1px solid #111111">' +
+        '<button type="button" class="row" data-k="' + i + '" aria-expanded="' + open + '" style="width: 100%; min-height: 64px; display: flex; align-items: center; gap: 20px; padding: 14px 8px; border: 0; background: transparent; font: inherit; text-align: left; cursor: pointer; color: #111111">' +
+          '<span style="font-family: \'Lexend\', sans-serif; font-size: 14px">0' + (i + 1) + '</span>' +
+          '<span style="flex: 1; font-size: 19px; font-weight: 500">' + esc(k.title) + '</span>' +
+          '<span aria-hidden="true" style="font-family: \'Lexend\', sans-serif; font-size: 22px; display: inline-block; transition: transform .3s; transform: rotate(' + (open ? '45deg' : '0deg') + ')">+</span>' +
+        '</button>' +
+        (open ? '<p class="swapA" style="margin: 0; padding: 0 48px 24px 52px; font-size: 16px; color: #333333">' + esc(k.body) + '</p>' : '') +
+      '</div>';
+    }).join('');
+  }
+  renderK();
+
+  /* ---------- Bàn ảnh kéo thả ---------- */
+  var mobile = window.matchMedia('(max-width: 720px)');
+  function makeTable(key, table, onTap) {
+    var list = PH[key], pos = {}, zTop = 40, d = null, suppress = false, els = {};
+    var init = function () { list.forEach(function (p, i) { pos[p.id] = { x: p.x, y: p.y, w: p.w, r: p.r, z: 10 + i }; }); };
+    init();
+    table.innerHTML = list.map(function (p, i) {
+      return '<button type="button" class="ph" data-id="' + p.id + '" data-i="' + i + '" aria-label="' + esc('Ảnh: ' + p.cap + '. Kéo để di chuyển') + '" style="padding: ' + (key === 'trip' ? '7px 7px 32px' : '6px') + '">' +
+        '<img src="' + p.src + '" alt="' + esc(p.cap) + '" draggable="false" loading="lazy" style="display: block; width: 100%; object-fit: cover; ' + p.ratio + '">' +
+        (key === 'trip' ? '<span style="position: absolute; left: 10px; right: 8px; bottom: 7px; font-family: \'Lexend\', sans-serif; font-size: 11px; letter-spacing: 1px; color: #111111; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">' + esc(p.cap) + '</span>' : '') +
+      '</button>';
+    }).join('');
+    Array.prototype.forEach.call(table.querySelectorAll('.ph'), function (el) { els[el.getAttribute('data-id')] = el; });
+    var apply = function (id, drag) {
+      var q = pos[id], el = els[id];
+      el.style.left = q.x + '%'; el.style.top = q.y + '%'; el.style.width = q.w + '%'; el.style.zIndex = q.z;
+      el.style.transform = 'rotate(' + (drag ? 0 : q.r) + 'deg) scale(' + (drag ? 1.05 : 1) + ')';
+      el.style.boxShadow = drag ? '0 30px 60px rgba(17,17,17,.28)' : '0 10px 24px rgba(17,17,17,.14)';
+      el.classList.toggle('drag', !!drag);
+    };
+    var applyAll = function () { list.forEach(function (p) { apply(p.id, false); }); };
+    applyAll();
+    table.addEventListener('pointerdown', function (e) {
+      var el = e.target.closest('.ph');
+      if (!el || mobile.matches || (e.pointerType === 'mouse' && e.button !== 0)) return;
+      var id = el.getAttribute('data-id'), box = table.getBoundingClientRect();
+      try { el.setPointerCapture(e.pointerId); } catch (err) {}
+      zTop += 1; pos[id].z = zTop;
+      d = { id: id, sx: e.clientX, sy: e.clientY, ox: pos[id].x, oy: pos[id].y, w: box.width, h: box.height, moved: false };
+      apply(id, true);
+    });
+    table.addEventListener('pointermove', function (e) {
+      if (!d) return;
+      var dx = e.clientX - d.sx, dy = e.clientY - d.sy;
+      if (Math.abs(dx) + Math.abs(dy) > 5) d.moved = true;
+      if (!d.moved) return;
+      var q = pos[d.id];
+      q.x = Math.max(-4, Math.min(100 - q.w + 4, d.ox + dx / d.w * 100));
+      q.y = Math.max(-4, Math.min(90, d.oy + dy / d.h * 100));
+      apply(d.id, true);
+    });
+    var up = function () { if (!d) return; if (d.moved) suppress = true; var id = d.id; d = null; apply(id, false); };
+    table.addEventListener('pointerup', up);
+    table.addEventListener('pointercancel', up);
+    table.addEventListener('click', function (e) {
+      var el = e.target.closest('.ph');
+      if (!el) return;
+      if (suppress) { suppress = false; return; }
+      var id = el.getAttribute('data-id');
+      zTop += 1; pos[id].z = zTop; apply(id, false);
+      if (onTap) onTap(+el.getAttribute('data-i'));
+    });
+    return function reset() { init(); applyAll(); };
+  }
+  var resetTalk = makeTable('talk', $('talkTable'), function (i) { openLb(i); });
+  var resetTrip = makeTable('trip', $('tripTable'), null);
+  $('resetTalk').addEventListener('click', resetTalk);
+  $('resetTrip').addEventListener('click', resetTrip);
+
+  /* ---------- Lightbox ---------- */
+  var LB = -1, lastFocus = null;
+  function renderLb() {
+    var box = $('lightbox');
+    if (LB < 0) { box.innerHTML = ''; document.body.classList.remove('lock'); return; }
+    var g = PH.talk[LB], n = PH.talk.length;
+    box.innerHTML =
+      '<div role="dialog" aria-modal="true" aria-label="Xem ảnh" style="position: fixed; inset: 0; z-index: 100; background: rgba(247,247,245,0.98); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; padding: 24px; box-sizing: border-box; animation: fade .3s ease">' +
+        '<button type="button" aria-label="Đóng" data-lbclose style="position: absolute; top: 16px; right: 16px; width: 46px; height: 46px; border: 1px solid #111111; border-radius: 12px; background: #F7F7F5; color: #111111; cursor: pointer; font-size: 20px">✕</button>' +
+        '<img class="swapA" src="' + g.src + '" alt="' + esc(g.cap) + '" style="max-width: min(1100px, 100%); max-height: 74vh; object-fit: contain">' +
+        '<div style="display: flex; align-items: center; gap: 14px; font-family: \'Lexend\', sans-serif; font-size: 13px">' +
+          '<button type="button" aria-label="Ảnh trước" data-lbstep="-1" style="flex: none; width: 44px; height: 44px; border: 1px solid #111111; background: transparent; color: #111111; cursor: pointer">←</button>' +
+          '<span style="text-align: center; max-width: 520px">' + esc(g.cap) + ' · ' + (LB + 1) + '/' + n + '</span>' +
+          '<button type="button" aria-label="Ảnh tiếp" data-lbstep="1" style="flex: none; width: 44px; height: 44px; border: 1px solid #111111; background: transparent; color: #111111; cursor: pointer">→</button>' +
+        '</div>' +
+      '</div>';
+    document.body.classList.add('lock');
+  }
+  function openLb(i) { lastFocus = document.activeElement; LB = i; renderLb(); var c = document.querySelector('[data-lbclose]'); if (c) c.focus(); }
+  function closeLb() { LB = -1; renderLb(); if (lastFocus) lastFocus.focus(); }
+  function stepLb(s) { var n = PH.talk.length; LB = (LB + s + n) % n; renderLb(); }
+
+  /* ---------- Hợp tác + popup ---------- */
+  var sData = [
+      { label: 'Coaching & Training', title: 'Coaching & Training', short: 'Đồng hành 1:1 hoặc đào tạo inhouse cho đội ngũ đang kẹt ở đúng những chỗ mình từng kẹt.', tagline: 'Khi bạn hoặc đội ngũ đang kẹt ở đúng chỗ mà mình từng kẹt.',
+        fit: ['Ngân sách quảng cáo vẫn chảy đều mà đơn hàng không về.', 'Đội ngũ làm nhiều nhưng chưa có quy trình, việc gì cũng phải đi qua founder.', 'Bạn muốn đưa AI vào công việc marketing hằng ngày mà chưa biết bắt đầu từ đâu.', 'Bạn đang đứng trước một quyết định lớn và cần người từng đi qua để nói thật.'],
+        steps: [['Nhìn vào dự án thật', 'Bắt đầu từ chính số liệu, funnel, quy trình và đội ngũ bạn đang có.'], ['Gọi đúng tên chỗ đang kẹt', 'Hiểu đúng vấn đề trước khi bàn giải pháp, vì sửa sai chỗ thì tốn gấp đôi.'], ['Cùng sửa tới khi chạy được', 'Áp dụng thẳng vào dự án của bạn thay vì dạy lý thuyết suông.']],
+        gets: ['Thấy rõ chỗ đang kẹt', 'Lộ trình sửa cụ thể', 'Đội ngũ tự vận hành được'],
+        noteLabel: 'HÌNH THỨC', note: 'Coaching 1:1 · Inhouse training cho doanh nghiệp · Workshop theo chủ đề: performance ads, thiết kế offer, thương mại điện tử quốc tế, AI trong marketing, xây hệ thống cho founder.', cta: 'Đặt lịch trao đổi', dark: true },
+      { label: 'Dịch vụ Marketing', title: 'Dịch vụ Marketing qua Gendigi', short: 'Chiến lược, performance ads, thiết kế offer và funnel cho doanh nghiệp cần tăng trưởng có hệ thống.', tagline: 'Tăng trưởng doanh thu bằng hệ thống, không phải bằng may mắn.',
+        fit: ['Doanh nghiệp đang chạy quảng cáo nhưng không đo được hiệu quả thật.', 'Sản phẩm tốt nhưng offer chưa đủ sức thuyết phục người mua.', 'Bạn cần một đội marketing đồng hành thay vì tự làm mọi thứ.'],
+        steps: [['Hiểu người mua', 'Tìm ra vì sao khách mua, và vì sao họ chần chừ rồi rời đi.'], ['Thiết kế offer và funnel', 'Xây hành trình từ lúc khách chưa biết bạn đến lúc trả tiền, bước nào cũng đo được.'], ['Chạy và tối ưu', 'Performance ads, đo lường từng đồng, ứng dụng công nghệ và AI.']],
+        gets: ['Offer đúng người mua', 'Funnel đo lường được', 'Tăng trưởng có hệ thống'],
+        noteLabel: 'VỀ GENDIGI', note: 'Gendigi là Growth Marketing Partner, cung cấp giải pháp Marketing ứng dụng Công nghệ và AI cho doanh nghiệp.', cta: 'Nhắn để được tư vấn', more: 'https://gendigi.com' },
+      { label: 'Diễn giả', title: 'Diễn giả tại sự kiện', short: 'Chia sẻ về AI, Digital Marketing, Thương mại điện tử và Chuyển đổi số, từ workshop nhỏ đến hội trường lớn.', tagline: 'Chuyện thật từ người đang làm, mang về dùng được liền.',
+        fit: ['Trường đại học hoặc CLB sinh viên cần một buổi chia sẻ thực chiến.', 'Doanh nghiệp, hiệp hội cần diễn giả về AI, marketing, thương mại điện tử.', 'Sự kiện cần người kể chuyện thật thay vì lý thuyết.'],
+        steps: [['Hiểu người nghe', 'Mình hỏi kỹ về khán giả trước khi chuẩn bị nội dung.'], ['Kể chuyện thật', 'Những gì mình làm đúng, làm sai, và đã trả giá ra sao.'], ['Để lại thứ mang về', 'Mỗi buổi đều có một bài tập hoặc câu hỏi người nghe áp dụng được ngay.']],
+        gets: ['Nội dung sát thực tế', 'Người nghe đổi cách nghĩ', 'Bài tập dùng được ngay'],
+        noteLabel: 'ĐÃ CHIA SẺ TẠI', note: 'Đại học Kinh tế (ĐH Đà Nẵng) · Đại học Đông Á · Đại học Duy Tân · Đại học FPT · Hiệp hội Thương mại Điện tử Việt Nam (VECOM).', cta: 'Mời mình chia sẻ' },
+      { label: 'Kết nối', title: 'Một ly cà phê', short: 'Không cần dự án lớn. Nếu bạn đang xây gì đó và cần một góc nhìn khác, cứ nhắn.', tagline: 'Chỉ cần một điều bạn đang trăn trở.',
+        fit: ['Bạn đang xây một thứ chưa chắc sẽ thành.', 'Bạn phân vân giữa hai lựa chọn mà ai hỏi cũng khuyên một kiểu.', 'Bạn cần một góc nhìn khác từ người đã đi trước.'],
+        steps: [['Nhắn trước một dòng', 'Bạn là ai và đang xây gì.'], ['Mình nghe hết câu chuyện', 'Trước khi nói bất cứ điều gì.'], ['Nói thật những gì mình nghĩ', 'Kể cả khi đó không phải điều dễ nghe nhất.']],
+        gets: ['Một góc nhìn mới', 'Chuyện thật từ người đi trước', 'Một người bạn trong nghề'],
+        noteLabel: 'Ở ĐÂU', note: 'Cà phê ở Đà Nẵng, hoặc một cuộc gọi Zalo nếu bạn ở xa.', cta: 'Hẹn cà phê qua Zalo' }
+  ];
+  $('svcGrid').innerHTML = sData.map(function (s, i) {
+    var card = s.dark ? 'background: #111111; color: #F7F7F5; border: 1px solid #111111' : 'background: #FFFFFF; color: #111111; border: 1px solid #E4E4E1';
+    return '<button type="button" class="svc" data-svc="' + i + '" aria-haspopup="dialog" style="display: flex; flex-direction: column; align-items: flex-start; gap: 12px; padding: 32px 30px; border-radius: 20px; font: inherit; text-align: left; cursor: pointer; ' + card + '">' +
+      '<span style="font-family: \'Lexend\', sans-serif; font-size: 12px; letter-spacing: 2px; opacity: .65">0' + (i + 1) + '</span>' +
+      '<span style="font-family: \'Lexend\', sans-serif; font-size: 22px; font-weight: 500; line-height: 1.3">' + esc(s.title) + '</span>' +
+      '<span style="font-size: 15px; line-height: 1.7; opacity: .8">' + esc(s.short) + '</span>' +
+      '<span style="margin-top: 8px; font-family: \'Lexend\', sans-serif; font-size: 13px; letter-spacing: 1px; text-decoration: underline; text-underline-offset: 6px">XEM CHI TIẾT →</span>' +
+    '</button>';
+  }).join('');
+  var SV = -1;
+  function renderSvc() {
+    var box = $('svcModal');
+    if (SV < 0) { box.innerHTML = ''; document.body.classList.remove('lock'); return; }
+    var s = sData[SV];
+    box.innerHTML =
+      '<div data-svcclose style="position: fixed; inset: 0; z-index: 90; background: rgba(17,17,17,0.55); display: flex; align-items: center; justify-content: center; padding: 24px 16px; box-sizing: border-box; animation: fade .25s ease">' +
+        '<div role="dialog" aria-modal="true" aria-label="' + esc(s.title) + '" class="swapA" style="width: 100%; max-width: 880px; max-height: calc(100vh - 48px); max-height: calc(100dvh - 48px); display: flex; flex-direction: column; background: #FFFFFF; border-radius: 22px; overflow: clip; box-shadow: 0 40px 100px rgba(17,17,17,0.3)">' +
+          '<div style="flex: none; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 20px 18px 28px; background: #F0EFEC">' +
+            '<span style="font-family: \'Lexend\', sans-serif; font-size: 15px; font-weight: 500; color: #555555">' + esc(s.label) + '</span>' +
+            '<button type="button" aria-label="Đóng" data-svcclose style="width: 44px; height: 44px; border: 0; border-radius: 50%; background: #FFFFFF; color: #111111; font-size: 18px; cursor: pointer">✕</button>' +
+          '</div>' +
+          '<div style="flex: 1; overflow-y: auto; padding: clamp(28px, 5vw, 56px) clamp(22px, 5vw, 56px) 40px">' +
+            '<h2 style="margin: 0; text-align: center; font-family: \'Lexend\', sans-serif; font-size: clamp(26px, 3.6vw, 38px); font-weight: 500; line-height: 1.25; letter-spacing: -0.5px">' + esc(s.title) + '</h2>' +
+            '<p style="margin: 12px auto 0; max-width: 560px; text-align: center; font-size: 17px; color: #555555">' + esc(s.tagline) + '</p>' +
+            '<h3 style="margin: 48px 0 16px; font-family: \'Lexend\', sans-serif; font-size: 20px; font-weight: 500">Phù hợp khi</h3>' +
+            '<div style="display: flex; flex-direction: column; gap: 12px">' + s.fit.map(function (t) {
+              return '<div style="display: flex; gap: 14px; align-items: baseline; font-size: 16px; line-height: 1.65; color: #333333"><span aria-hidden="true" style="flex: none; width: 7px; height: 7px; border-radius: 50%; background: #9A9A9A; transform: translateY(-2px)"></span>' + esc(t) + '</div>';
+            }).join('') + '</div>' +
+            '<h3 style="margin: 48px 0 18px; font-family: \'Lexend\', sans-serif; font-size: 20px; font-weight: 500">Mình làm gì cùng bạn</h3>' +
+            '<div style="display: flex; flex-direction: column; gap: 20px">' + s.steps.map(function (p, i) {
+              return '<div style="display: flex; gap: 16px; align-items: flex-start"><span style="flex: none; width: 32px; height: 32px; border-radius: 50%; background: #111111; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-family: \'Lexend\', sans-serif; font-size: 14px">' + (i + 1) + '</span><div style="display: flex; flex-direction: column; gap: 2px; line-height: 1.6"><span style="font-family: \'Lexend\', sans-serif; font-size: 17px; font-weight: 500">' + esc(p[0]) + '</span><span style="font-size: 15px; color: #555555">' + esc(p[1]) + '</span></div></div>';
+            }).join('') + '</div>' +
+            '<h3 style="margin: 48px 0 16px; font-family: \'Lexend\', sans-serif; font-size: 20px; font-weight: 500">Bạn nhận được</h3>' +
+            '<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px">' + s.gets.map(function (t) {
+              return '<div style="padding: 22px 18px; border: 1px solid #E4E4E1; border-radius: 14px; text-align: center; font-family: \'Lexend\', sans-serif; font-size: 16px; font-weight: 500">' + esc(t) + '</div>';
+            }).join('') + '</div>' +
+            '<div style="margin-top: 36px; padding: 20px 22px; border-radius: 14px; background: #F4F4F1">' +
+              '<div style="font-family: \'Lexend\', sans-serif; font-size: 12px; letter-spacing: 2px; color: #6B6B6B">' + esc(s.noteLabel) + '</div>' +
+              '<p style="margin: 6px 0 0; font-size: 15px; line-height: 1.7; color: #333333">' + esc(s.note) + '</p>' +
+            '</div>' +
+          '</div>' +
+          '<div style="flex: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; padding: 16px 20px; border-top: 1px solid #EDEDEA; background: #FFFFFF">' +
+            (s.more ? '<a href="' + s.more + '" target="_blank" rel="noopener" style="height: 46px; display: inline-flex; align-items: center; gap: 8px; padding: 0 20px; border: 1px solid #DADAD6; border-radius: 999px; color: #111111; text-decoration: none; font-size: 14px">Xem thêm ↗</a>' : '') +
+            '<a href="https://zalo.me/0382885519" target="_blank" rel="noopener" style="height: 46px; display: inline-flex; align-items: center; gap: 8px; padding: 0 24px; border-radius: 999px; background: #111111; color: #FFFFFF; text-decoration: none; font-family: \'Lexend\', sans-serif; font-size: 14px">' + esc(s.cta) + ' →</a>' +
+          '</div>' +
+        '</div>' +
+      '</div>';
+    document.body.classList.add('lock');
+  }
+  function openSvc(i) { lastFocus = document.activeElement; SV = i; renderSvc(); var c = document.querySelector('button[data-svcclose]'); if (c) c.focus(); }
+  function closeSvc() { SV = -1; renderSvc(); if (lastFocus) lastFocus.focus(); }
+
+  /* ---------- Bắt sự kiện chung ---------- */
+  document.addEventListener('click', function (e) {
+    var t = e.target, el;
+    if ((el = t.closest('[data-j]'))) { J = +el.getAttribute('data-j'); renderJ(true); return; }
+    if ((el = t.closest('[data-jnext]'))) { J = +el.getAttribute('data-jnext'); renderJ(true); return; }
+    if ((el = t.closest('[data-b]'))) { B = +el.getAttribute('data-b'); renderB(true); return; }
+    if ((el = t.closest('[data-k]'))) { var i = +el.getAttribute('data-k'); K = K === i ? -1 : i; renderK(); var b = document.querySelector('[data-k="' + i + '"]'); if (b) b.focus(); return; }
+    if ((el = t.closest('[data-svc]'))) { openSvc(+el.getAttribute('data-svc')); return; }
+    if (t.closest('[data-lbclose]')) { closeLb(); return; }
+    if ((el = t.closest('[data-lbstep]'))) { stepLb(+el.getAttribute('data-lbstep')); return; }
+    if (SV >= 0) {
+      var closer = t.closest('[data-svcclose]');
+      if (closer && (closer.tagName === 'BUTTON' || t === closer)) closeSvc();
+    }
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') { if (LB >= 0) closeLb(); else if (SV >= 0) closeSvc(); }
+    if (LB >= 0 && e.key === 'ArrowLeft') stepLb(-1);
+    if (LB >= 0 && e.key === 'ArrowRight') stepLb(1);
+  });
+})();
+
+</script>
+</body>
+</html>
