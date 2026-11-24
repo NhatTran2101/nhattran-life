@@ -238,6 +238,28 @@ body{padding-bottom:84px}
 .cb .pin{order:2}
 .climb::before{top:8px}
 }
+
+/* proof */
+.proof{display:grid;gap:18px}
+.case{display:grid;grid-template-columns:1fr 1.25fr;gap:clamp(24px,4vw,56px);align-items:start;background:var(--card);border:1px solid var(--line);border-radius:24px;padding:clamp(24px,3.5vw,44px)}
+.case .k{font-family:'Lexend',sans-serif;font-size:12px;letter-spacing:2px;color:var(--soft)}
+.case h3{font-size:clamp(22px,2.8vw,30px);margin:10px 0 14px}
+.case p{color:#2A2A2A}
+.case ul{margin:0;padding-left:20px;color:#2A2A2A}
+.case li{margin:6px 0}
+.big{font-family:'Lexend',sans-serif;font-weight:500;font-size:clamp(40px,5vw,64px);line-height:1;letter-spacing:-0.03em;margin:6px 0 4px}
+.shots{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:start}
+.shot{margin:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--bg)}
+.shot img{display:block;width:100%;height:auto}
+.shot figcaption{padding:8px 12px;font-size:13px;color:var(--soft);border-top:1px solid var(--line);background:var(--card)}
+.award{display:flex;align-items:center;justify-content:center;min-height:260px;border:1px dashed #BDBDBD;border-radius:16px;background:var(--bg);text-align:center;padding:24px}
+.award b{display:block;font-family:'Lexend',sans-serif;font-weight:500;font-size:clamp(22px,2.6vw,28px);letter-spacing:-0.01em}
+.award span{font-family:'Lexend',sans-serif;font-size:12px;letter-spacing:2px;color:var(--soft)}
+.case.wide{grid-template-columns:1fr}
+.case.wide .txt{display:grid;grid-template-columns:1fr 1.25fr;gap:clamp(24px,4vw,56px)}
+.shot a{display:block;cursor:zoom-in}
+@media (max-width: 900px){.case,.case.wide .txt{grid-template-columns:1fr}}
+@media (max-width: 620px){.shots{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -301,9 +323,58 @@ body{padding-bottom:84px}
     </div>
   </section>
 
-  <!-- 02 CÓ PHẢI BẠN -->
+  <!-- 02 CASE STUDY -->
+  <section id="da-lam" class="wrap sec">
+    <div class="eyebrow">02 / NHỮNG GÌ MÌNH ĐÃ LÀM VỚI CLAUDE</div>
+    <h2 class="reveal">Mấy thứ mình dạy trong lớp đều từ việc mình làm thật.</h2>
+    <div class="proof">
+
+      <article class="case wide reveal">
+        <div class="txt"><div>
+          <div class="k">CASE 01 · TIỀN THẬT, VIỆC THẬT</div>
+          <h3>Mình đã chi khá nhiều tiền cho Claude</h3>
+          <div class="big">750+ USD</div>
+          <p style="color:var(--soft);font-size:15px">Hai tài khoản, từ tháng 3/2026 tới nay, chỉ tính các hoá đơn đã thanh toán</p>
+          </div>
+          <p style="align-self:end">Tính ra là gần 20 triệu đồng, chưa kể mấy lần đổi gói rồi được hoàn tiền. Mình kể con số này ra để bạn biết những gì mình dạy đến từ việc dùng mỗi ngày, có giai đoạn dùng sai và tốn tiền vô ích, rồi mới lần ra cách dùng đáng đồng tiền. Học phí của lớp là để bạn khỏi phải trả lại phần học phí đó giống mình.</p>
+        </div>
+        <div class="shots">
+          <figure class="shot"><a href="../assets/img/claude-billing-1.jpg" target="_blank" rel="noopener"><img src="../assets/img/claude-billing-1.jpg" alt="Hoá đơn Claude của tài khoản thứ nhất, nhiều kỳ 111,11 USD từ tháng 6 tới tháng 11 năm 2026" loading="lazy"></a><figcaption>Tài khoản 1</figcaption></figure>
+          <figure class="shot"><a href="../assets/img/claude-billing-2.jpg" target="_blank" rel="noopener"><img src="../assets/img/claude-billing-2.jpg" alt="Hoá đơn Claude của tài khoản thứ hai, các kỳ khoảng 22 USD từ tháng 3 tới tháng 11 năm 2026" loading="lazy"></a><figcaption>Tài khoản 2</figcaption></figure>
+        </div>
+      </article>
+
+      <article class="case reveal">
+        <div>
+          <div class="k">CASE 02 · ĐEM ĐI THI</div>
+          <h3>Giải Dự án tiềm năng nhất tại Bestlist.ai</h3>
+          <p>Mình đem một dự án xây bằng AI đi thi ở Bestlist.ai và được trao giải Dự án tiềm năng nhất. Giải này làm mình vui vì nó cho thấy một người làm marketing như mình, nếu biết cách làm việc với AI, vẫn dựng được một sản phẩm đủ tốt để đứng chung sân với nhiều đội làm công nghệ.</p>
+        </div>
+        <div class="award" role="img" aria-label="Giấy khen Bestlist.ai, giải Dự án tiềm năng nhất">
+          <div><span>BESTLIST.AI</span><b>Dự án tiềm năng nhất</b></div>
+        </div>
+      </article>
+
+      <article class="case reveal">
+        <div>
+          <div class="k">CASE 03 · TỰ TAY DỰNG</div>
+          <h3>Mấy hệ thống mình tự làm để chạy công việc</h3>
+          <p>Từ lúc dùng Claude nhiều, mình bắt đầu tự dựng công cụ cho chính mình thay vì đi tìm phần mềm có sẵn rồi gò việc của mình theo nó.</p>
+          <ul>
+            <li><b>nhattran.os</b>, hệ thống quản lý một ngày làm việc của mình, gom Hôm nay, Lịch, Nội dung, Kiến thức, Kế hoạch, Routine về một chỗ. Chiến lược đang chạy trong ảnh là mỗi ngày 4 bài trên 4 nền tảng, 28 video mỗi tuần, khoảng 1.440 bài một năm, khối lượng mà làm tay thì mình không theo nổi.</li>
+            <li>Website nhattran.life và chính trang bạn đang đọc, làm cùng Claude.</li>
+            <li>Bộ Skill viết bài theo giọng văn của mình, để Claude viết nháp gần với cách mình nói chuyện.</li>
+          </ul>
+        </div>
+        <figure class="shot"><a href="../assets/img/nhattran-os.jpg" target="_blank" rel="noopener"><img src="../assets/img/nhattran-os.jpg" alt="Giao diện nhattran.os, trang Kế hoạch và chiến lược với chiến lược mỗi ngày 4 bài 4 nền tảng" loading="lazy"></a><figcaption>nhattran.os, trang Kế hoạch</figcaption></figure>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- 03 CÓ PHẢI BẠN -->
   <section class="wrap sec">
-    <div class="eyebrow">02 / NẾU TUẦN NÀO BẠN CŨNG GẶP</div>
+    <div class="eyebrow">03 / NẾU TUẦN NÀO BẠN CŨNG GẶP</div>
     <h2 class="reveal">Mấy chuyện nghe quen quen.</h2>
     <ul class="pains">
       <li><span class="n">01</span><div><h3>Hồ sơ 40 trang mà chỉ cần tìm vài điều khoản</h3><p>Đọc hết thì mất nguyên buổi chiều, đọc lướt thì lại sợ sót đúng cái chỗ quan trọng.</p></div></li>
@@ -318,7 +389,7 @@ body{padding-bottom:84px}
   <section id="theo-cong-viec" class="wrap sec">
     <div class="two">
       <div>
-        <div class="eyebrow">03 / HỌC THEO CÔNG VIỆC CỦA BẠN</div>
+        <div class="eyebrow">04 / HỌC THEO CÔNG VIỆC CỦA BẠN</div>
         <h2 class="reveal">Mỗi người học một bộ ví dụ khác nhau.</h2>
       </div>
       <div class="prose">
@@ -345,7 +416,7 @@ body{padding-bottom:84px}
 
   <!-- 04 TÍNH NĂNG -->
   <section class="wrap sec">
-    <div class="eyebrow">04 / NHỮNG THỨ BẠN SẼ DÙNG THẠO</div>
+    <div class="eyebrow">05 / NHỮNG THỨ BẠN SẼ DÙNG THẠO</div>
     <h2 class="reveal">Các tính năng của Claude, và dùng chúng vào việc gì.</h2>
     <div class="feats">
       <article class="feat reveal"><div class="top"><h3>Projects</h3><span class="b">BUỔI 1</span></div><p>Một không gian riêng chứa tài liệu và hướng dẫn cố định, mở ra là Claude đã biết bối cảnh.</p><div class="use"><b>DÙNG VÀO</b>Mỗi khách hàng, mỗi vụ việc hay mỗi mảng việc một Project.</div></article>
@@ -362,7 +433,7 @@ body{padding-bottom:84px}
 
   <!-- 05 LỘ TRÌNH -->
   <section id="lo-trinh" class="wrap sec">
-    <div class="eyebrow">05 / LỘ TRÌNH 4 BUỔI</div>
+    <div class="eyebrow">06 / LỘ TRÌNH 4 BUỔI</div>
     <h2 class="reveal">Đi từ giao việc cho đúng tới để Claude tự chạy.</h2>
     <div class="sessions">
 
@@ -439,7 +510,7 @@ body{padding-bottom:84px}
 
   <!-- 06 SAU KHOÁ -->
   <section id="sau-khoa" class="wrap sec">
-    <div class="eyebrow">06 / BẠN ĐANG Ở ĐÂU, HỌC XONG Ở ĐÂU</div>
+    <div class="eyebrow">07 / BẠN ĐANG Ở ĐÂU, HỌC XONG Ở ĐÂU</div>
     <h2 class="reveal">Mỗi buổi lấy lại thêm một ít thời gian, và nó cộng dồn.</h2>
     <p class="prose" style="color:#2A2A2A">Phần lớn mọi người bắt đầu ở cột đầu tiên, có dùng Claude nhưng chủ yếu để hỏi đáp. Mỗi buổi học thêm một lớp, và tới buổi 4 thì có những việc bạn không cần ngồi làm nữa. Cột cuối là chỗ bạn tự đi tiếp sau khoá, khi đã biết cách thì mỗi tuần bạn sẽ tự thấy thêm việc để giao cho Claude.</p>
 
@@ -480,7 +551,7 @@ body{padding-bottom:84px}
 
   <!-- 07 HỌC PHÍ -->
   <section id="hoc-phi" class="wrap sec">
-    <div class="eyebrow">07 / HỌC PHÍ</div>
+    <div class="eyebrow">08 / HỌC PHÍ</div>
     <h2 class="reveal">Một mức phí cho cả 4 buổi.</h2>
     <div id="dang-ky" class="price reveal">
       <div class="l">
@@ -514,7 +585,7 @@ body{padding-bottom:84px}
 
   <!-- 07 HỎI ĐÁP -->
   <section id="hoi-dap" class="wrap sec faq">
-    <div class="eyebrow">08 / HỎI ĐÁP</div>
+    <div class="eyebrow">09 / HỎI ĐÁP</div>
     <h2 class="reveal">Vài câu mình hay được hỏi.</h2>
     <details>
       <summary>Mình không rành công nghệ, có theo được không?</summary>
@@ -559,7 +630,7 @@ body{padding-bottom:84px}
 <!-- LIÊN HỆ -->
 <section class="contact" aria-labelledby="lh">
   <div class="inner">
-    <div class="eyebrow">09 / ĐĂNG KÝ</div>
+    <div class="eyebrow">10 / ĐĂNG KÝ</div>
     <h2 id="lh" class="reveal">NHẮN<br>MÌNH NHÉ?</h2>
     <div class="cgrid">
       <div class="txt">
