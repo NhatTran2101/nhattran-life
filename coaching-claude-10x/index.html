@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Coaching Claude 10x · Nhattran.life</title>
-<meta name="description" content="4 buổi coaching cùng Nhật Trần: cách đưa AI Claude vào công việc văn phòng hằng ngày để tiết kiệm thời gian và làm được nhiều việc hơn. Học phí 2.999.000đ.">
+<meta name="description" content="4 buổi coaching cùng Nhật Trần, học dùng Claude trên chính công việc của bạn: Project, Memory, Skill, Artifact, Claude in Chrome, việc lên lịch. Học phí 2.999.000đ.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://nhattran.life/coaching-claude-10x/">
 <meta property="og:title" content="Coaching Claude 10x · 4 buổi cùng Nhật Trần">
@@ -164,6 +164,32 @@ html{scroll-behavior:auto}
 .mcta .btn{min-height:42px;background:var(--bg);color:var(--ink);border-color:var(--bg)}
 body{padding-bottom:84px}
 }
+
+/* custom section */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:8px}
+.step{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px}
+.step .k{font-family:'Lexend',sans-serif;font-size:12px;letter-spacing:2px;color:var(--soft)}
+.step h3{margin:10px 0 10px}
+.step p{margin:0;color:#2A2A2A}
+.roles{margin-top:48px;border-top:1px solid var(--ink)}
+.role{display:grid;grid-template-columns:260px 1fr;gap:clamp(16px,4vw,48px);padding:24px 8px;border-bottom:1px solid var(--line)}
+.role h3{font-size:20px}
+.role ul{margin:0;padding-left:20px}
+.role li{margin:4px 0}
+/* features */
+.feats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.feat{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px;transition:transform .3s cubic-bezier(.2,.7,.2,1),box-shadow .3s}
+.feat:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(17,17,17,.08)}
+.feat .top{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.feat h3{font-size:22px}
+.feat .b{font-family:'Lexend',sans-serif;font-size:11px;letter-spacing:1.5px;color:var(--soft);white-space:nowrap}
+.feat p{margin:12px 0 0;color:#2A2A2A;font-size:16px;line-height:1.75}
+.feat .use{margin-top:auto;padding-top:16px;font-size:15px;line-height:1.65;color:var(--mute)}
+.feat .use b{font-family:'Lexend',sans-serif;font-weight:600;font-size:11px;letter-spacing:1.5px;display:block;color:var(--ink);margin-bottom:2px}
+.two h2{font-size:clamp(30px,3.8vw,48px)}
+.fact b{font-size:clamp(22px,3vw,36px)}
+@media (max-width: 900px){.steps,.feats{grid-template-columns:1fr}.role{grid-template-columns:1fr;gap:8px}}
+@media (min-width: 621px) and (max-width: 900px){.feats{grid-template-columns:repeat(2,1fr)}}
 </style>
 </head>
 <body>
@@ -173,9 +199,9 @@ body{padding-bottom:84px}
     <a class="logo" href="/" aria-label="Về trang chủ Nhattran.life"><img src="../assets/img/87c26fe39c3deceb5281165145abc7ca.png" alt="Nhattran.Life"></a>
     <div class="navmid">
       <a class="navl" href="#vi-sao">VÌ SAO</a>
+      <a class="navl" href="#theo-cong-viec">THEO CÔNG VIỆC</a>
       <a class="navl" href="#lo-trinh">LỘ TRÌNH</a>
       <a class="navl" href="#hoc-phi">HỌC PHÍ</a>
-      <a class="navl" href="#hoi-dap">HỎI ĐÁP</a>
     </div>
     <a class="btn" href="#dang-ky">ĐĂNG KÝ →</a>
   </nav>
@@ -186,17 +212,17 @@ body{padding-bottom:84px}
   <!-- HERO -->
   <section class="wrap hero">
     <div class="hero-top rise">
-      <span class="eyebrow">COACHING 1:1 &amp; NHÓM NHỎ · CÙNG NHẬT TRẦN</span>
+      <span class="eyebrow">COACHING CÙNG NHẬT TRẦN</span>
       <span class="eyebrow">4 BUỔI · ỨNG DỤNG CLAUDE VÀO CÔNG VIỆC</span>
     </div>
-    <h1 class="rise" style="animation-delay:.1s">Claude 10x<span>Làm việc văn phòng nhanh hơn, đỡ mệt hơn.</span></h1>
+    <h1 class="rise" style="animation-delay:.1s">Claude 10x<span>Học dùng Claude trên chính việc bạn đang làm.</span></h1>
 
     <div class="hero-grid">
       <div class="rise" style="animation-delay:.2s">
-        <p class="lead">Bốn buổi để bạn đưa Claude vào đúng những việc đang ngốn thời gian mỗi ngày: đọc tài liệu dài, soạn văn bản, đối chiếu số liệu, làm báo cáo. Học trên chính hồ sơ và file của bạn, ra về là dùng được ngay sáng hôm sau.</p>
+        <p class="lead">Bốn buổi mình ngồi cùng bạn, lấy đúng mấy việc đang ngốn nhiều giờ nhất mỗi tuần của bạn ra rồi giao từng việc cho Claude tới khi nó làm được, để học xong bạn có sẵn Project, Skill và vài việc tự chạy, dùng tiếp được từ tuần sau.</p>
         <div class="hero-cta">
           <a class="btn" href="#dang-ky">GIỮ CHỖ · 2.999.000Đ</a>
-          <a class="btn ghost" href="#lo-trinh">XEM LỘ TRÌNH 4 BUỔI</a>
+          <a class="btn ghost" href="#lo-trinh">XEM 4 BUỔI HỌC GÌ</a>
         </div>
       </div>
       <figure class="hero-photo rise" style="margin:0;animation-delay:.3s">
@@ -207,7 +233,7 @@ body{padding-bottom:84px}
     <div class="facts rise" style="animation-delay:.35s">
       <div class="fact"><small>THỜI LƯỢNG</small><b>4 buổi</b></div>
       <div class="fact"><small>HỌC PHÍ</small><b>2.999.000đ</b></div>
-      <div class="fact"><small>CÔNG CỤ</small><b>Claude</b></div>
+      <div class="fact"><small>NỘI DUNG</small><b>Theo việc của bạn</b></div>
     </div>
   </section>
 
@@ -216,180 +242,211 @@ body{padding-bottom:84px}
     <div class="two">
       <div>
         <div class="eyebrow">01 / VÌ SAO MÌNH MỞ LỚP NÀY</div>
-        <h2 class="reveal">Biết dùng AI và để AI làm việc cho mình là hai chuyện khác nhau.</h2>
+        <h2 class="reveal">Hồi đầu mình cũng dùng Claude y như dùng Google.</h2>
       </div>
       <div class="prose">
-        <p>Mình dùng Claude hằng ngày trong công việc ở Gendigi, từ soạn đề xuất, đọc hợp đồng với đối tác, tới tổng hợp số liệu cuối tháng. Thứ làm mình thay đổi cách làm việc không nằm ở việc biết thêm vài câu lệnh hay, mà ở chỗ mình ngồi xuống liệt kê ra những việc lặp đi lặp lại mỗi tuần rồi giao từng việc một cho Claude, có quy trình, có mẫu, có chỗ để kiểm tra lại.</p>
-        <p>Khi nói chuyện với bạn bè làm văn phòng, mình hay nghe cùng một câu: đã thử ChatGPT hoặc Claude rồi, thấy cũng hay, nhưng kết quả chung chung quá nên lại quay về làm tay. Mình hiểu cảm giác đó, vì hồi đầu mình cũng vậy. Vấn đề thường nằm ở cách giao việc, ở chỗ mình chưa đưa đủ bối cảnh, chưa cho nó xem mẫu, chưa biết tính năng nào hợp với loại việc nào.</p>
-        <p>Lớp này là phần mình tự mày mò được, gói lại trong 4 buổi. Mình không hứa bạn sẽ nhanh gấp 10 lần ở mọi việc, con số 10x là cái đích để nhắm tới ở vài đầu việc cụ thể nhất của bạn. Có việc Claude làm rất tốt, có việc vẫn cần bạn làm, và một phần của lớp là giúp bạn phân biệt được hai loại đó.</p>
+        <p>Gõ một câu hỏi, đọc câu trả lời, thấy cũng hay rồi đóng tab. Phải mất một thời gian mình mới để ý là phần lớn giờ làm của mình không nằm ở mấy câu hỏi đó, mà nằm ở những việc tuần nào cũng lặp lại: đọc hợp đồng đối tác gửi qua, viết một cái email gần giống cái tuần trước, gom số liệu từ mấy file để làm báo cáo. Tới lúc mình giao hẳn mấy việc đó cho Claude, có tài liệu kèm theo, có mẫu, có hướng dẫn lưu lại để lần sau khỏi dặn lại, thì mình mới thấy nó khác hẳn.</p>
+        <p>Bạn bè làm văn phòng hỏi mình nhiều nhất là sao dùng hoài mà không thấy nhanh hơn bao nhiêu. Mình ngồi xem vài người làm thì thấy gần như ai cũng kẹt ở cùng một chỗ, mỗi lần mở Claude lên là một lần giải thích lại từ đầu mình là ai, đang làm gì, muốn kết quả ra sao, trong khi Claude đã có Project, Memory, Skill để lo đúng chuyện đó mà ít ai đụng tới, chưa kể Claude in Chrome hay việc lên lịch tự chạy thì càng ít người biết.</p>
+        <p>Cái tên 10x nghe hơi to, mình biết. Mình không dám nói mọi việc của bạn sẽ nhanh gấp 10 lần, có việc Claude làm rất giỏi, có việc nó làm sai mà giọng vẫn rất chắc, và có việc bạn vẫn nên tự làm. Con số đó là cái đích mình nhắm cho vài đầu việc lặp lại nhiều nhất của bạn, kiểu một bản tóm tắt hồ sơ từ gần 2 tiếng xuống còn mười mấy phút, và 4 buổi này là để cùng bạn tìm ra đó là những việc nào rồi làm cho bằng được.</p>
       </div>
     </div>
   </section>
 
   <!-- 02 CÓ PHẢI BẠN -->
   <section class="wrap sec">
-    <div class="eyebrow">02 / NẾU BẠN ĐANG GẶP NHỮNG CHUYỆN NÀY</div>
-    <h2 class="reveal">Những việc ăn mất thời gian của bạn mỗi tuần.</h2>
+    <div class="eyebrow">02 / NẾU TUẦN NÀO BẠN CŨNG GẶP</div>
+    <h2 class="reveal">Mấy chuyện nghe quen quen.</h2>
     <ul class="pains">
-      <li><span class="n">01</span><div><h3>Đọc một tài liệu 40 trang chỉ để tìm 3 điều khoản</h3><p>Hợp đồng, thông tư, hồ sơ khách gửi qua. Đọc hết thì mất cả buổi, đọc lướt thì sợ sót.</p></div></li>
-      <li><span class="n">02</span><div><h3>Soạn đi soạn lại những văn bản na ná nhau</h3><p>Email trả lời khách, công văn, biên bản, thư tư vấn. Mỗi lần lại mở file cũ ra sửa tên, sửa số, sửa ngày.</p></div></li>
-      <li><span class="n">03</span><div><h3>Đối chiếu số liệu giữa nhiều file Excel</h3><p>Sao kê với sổ sách, báo cáo tháng này với tháng trước. Việc không khó nhưng dễ nhầm và rất lâu.</p></div></li>
-      <li><span class="n">04</span><div><h3>Báo cáo cuối tháng luôn làm vào phút chót</h3><p>Dữ liệu có sẵn, nhưng biến nó thành một bản tóm tắt sếp đọc được trong 5 phút lại là chuyện khác.</p></div></li>
-      <li><span class="n">05</span><div><h3>Đã thử AI nhưng câu trả lời chung chung, lại phải sửa nhiều</h3><p>Kết quả trôi chảy mà không dùng được, hoặc nghe rất tự tin nhưng sai chi tiết.</p></div></li>
-      <li><span class="n">06</span><div><h3>Ngại đưa tài liệu công việc lên AI vì lo bảo mật</h3><p>Không biết cái gì được đưa vào, cái gì nên che đi, cài đặt nào cần tắt.</p></div></li>
+      <li><span class="n">01</span><div><h3>Hồ sơ 40 trang mà chỉ cần tìm vài điều khoản</h3><p>Đọc hết thì mất nguyên buổi chiều, đọc lướt thì lại sợ sót đúng cái chỗ quan trọng.</p></div></li>
+      <li><span class="n">02</span><div><h3>Mở file cũ, sửa tên, sửa ngày, gửi</h3><p>Email trả lời khách, công văn, biên bản, cái nào cũng chỉ khác nhau vài dòng mà lần nào cũng mất 20 phút.</p></div></li>
+      <li><span class="n">03</span><div><h3>Đối chiếu số liệu giữa mấy file Excel</h3><p>Việc không khó, chỉ lâu, và mắt bắt đầu mỏi là bắt đầu nhầm.</p></div></li>
+      <li><span class="n">04</span><div><h3>Thử AI rồi, nhưng lại quay về làm tay</h3><p>Câu trả lời đọc thì trôi mà chung chung quá, sửa lại còn lâu hơn tự viết. Mình nghĩ đây là lý do nhiều người bỏ cuộc nhất sau vài tuần dùng thử.</p></div></li>
+      <li><span class="n">05</span><div><h3>Ngại đưa tài liệu công việc lên AI</h3><p>Không biết cái gì đưa vào được, cái gì nên che, nên cứ để đó không dùng.</p></div></li>
     </ul>
   </section>
 
-  <!-- 03 LỘ TRÌNH -->
+  <!-- 03 THEO CÔNG VIỆC -->
+  <section id="theo-cong-viec" class="wrap sec">
+    <div class="two">
+      <div>
+        <div class="eyebrow">03 / HỌC THEO CÔNG VIỆC CỦA BẠN</div>
+        <h2 class="reveal">Mỗi người học một bộ ví dụ khác nhau.</h2>
+      </div>
+      <div class="prose">
+        <p>Khung 4 buổi bên dưới là phần cố định, còn ví dụ, bài tập và mấy thứ bạn mang về thì mình soạn lại cho từng người. Lý do đơn giản thôi, một bạn luật sư với một bạn kế toán dùng Claude cho những việc rất khác nhau, học chung một bộ ví dụ thì ai cũng phải tự ngồi dịch lại sang việc của mình, mà phần dịch đó mới là phần khó nhất.</p>
+      </div>
+    </div>
+
+    <div class="steps">
+      <div class="step reveal"><div class="k">TRƯỚC BUỔI 1</div><h3>Một cuộc gọi khoảng 30 phút</h3><p>Mình hỏi bạn làm gì, một tuần của bạn trôi qua thế nào, việc nào lặp lại, việc nào bạn ngán nhất. Có file mẫu thì bạn gửi kèm, nhớ che thông tin nhạy cảm.</p></div>
+      <div class="step reveal"><div class="k">XUYÊN SUỐT KHOÁ</div><h3>Chọn ra 3 đến 5 việc của bạn</h3><p>Mỗi buổi học một nhóm tính năng, nhưng bài thực hành luôn là mấy việc này, nên học tới đâu là có thứ dùng được tới đó.</p></div>
+      <div class="step reveal"><div class="k">GIỮA CÁC BUỔI</div><h3>Bài tập là việc thật trong tuần</h3><p>Bạn đem việc trong tuần ra làm thử với Claude, chỗ nào kẹt thì buổi sau mình gỡ cùng bạn.</p></div>
+    </div>
+
+    <div class="roles">
+      <div class="eyebrow" style="padding:20px 8px 0">VÍ DỤ CÙNG MỘT KHUNG, MỖI NGƯỜI MANG VỀ MỘT BỘ KHÁC NHAU</div>
+      <div class="role reveal"><h3>Luật sư, pháp chế</h3><ul><li>Mỗi vụ việc một Project chứa sẵn hồ sơ, hỏi gì Claude cũng trả lời dựa trên đúng hồ sơ đó</li><li>Skill rà soát hợp đồng theo checklist của văn phòng bạn</li><li>Claude in Chrome tra cứu văn bản pháp luật trên các cổng thông tin</li></ul></div>
+      <div class="role reveal"><h3>Kế toán</h3><ul><li>Đưa sao kê và sổ sách vào để đối chiếu, chỉ ra dòng lệch</li><li>Skill lập báo cáo tháng theo đúng mẫu công ty</li><li>Việc lên lịch nhắc hạn nộp tờ khai và gom chứng từ còn thiếu</li></ul></div>
+      <div class="role reveal"><h3>Nhân sự, hành chính</h3><ul><li>Project chứa nội quy, chính sách để trả lời nhanh câu hỏi của nhân viên</li><li>Skill soạn JD, thư mời, quyết định theo giọng văn công ty</li><li>Đọc và tóm tắt CV ứng viên theo tiêu chí bạn đặt</li></ul></div>
+      <div class="role reveal"><h3>Kinh doanh, chăm sóc khách hàng</h3><ul><li>Soạn báo giá, email theo dõi từ ghi chú cuộc họp</li><li>Claude in Chrome gom thông tin khách hàng tiềm năng về một bảng</li><li>Mỗi sáng thứ Hai tự có bản tóm tắt tình hình khách hàng tuần trước</li></ul></div>
+      <p style="padding:20px 8px 0;margin:0;color:var(--mute)">Bạn làm nghề khác cũng được, mình sẽ hỏi kỹ trước rồi soạn lại ví dụ cho bạn.</p>
+    </div>
+  </section>
+
+  <!-- 04 TÍNH NĂNG -->
+  <section class="wrap sec">
+    <div class="eyebrow">04 / NHỮNG THỨ BẠN SẼ DÙNG THẠO</div>
+    <h2 class="reveal">Các tính năng của Claude, và dùng chúng vào việc gì.</h2>
+    <div class="feats">
+      <article class="feat reveal"><div class="top"><h3>Projects</h3><span class="b">BUỔI 1</span></div><p>Một không gian riêng chứa tài liệu và hướng dẫn cố định, mở ra là Claude đã biết bối cảnh.</p><div class="use"><b>DÙNG VÀO</b>Mỗi khách hàng, mỗi vụ việc hay mỗi mảng việc một Project.</div></article>
+      <article class="feat reveal"><div class="top"><h3>Memory</h3><span class="b">BUỔI 1</span></div><p>Claude nhớ bạn làm nghề gì, hay viết kiểu nào, thích kết quả trình bày ra sao.</p><div class="use"><b>DÙNG VÀO</b>Đỡ phải dặn đi dặn lại mấy thứ giống nhau ở mỗi cuộc trò chuyện.</div></article>
+      <article class="feat reveal"><div class="top"><h3>Đọc &amp; tạo file</h3><span class="b">BUỔI 2</span></div><p>Đọc PDF, Word, Excel dài, phân tích số liệu, rồi xuất kết quả ra Word, Excel, PowerPoint.</p><div class="use"><b>DÙNG VÀO</b>Tóm tắt hồ sơ, đối chiếu số liệu, làm báo cáo có biểu đồ.</div></article>
+      <article class="feat reveal"><div class="top"><h3>Artifacts</h3><span class="b">BUỔI 2</span></div><p>Claude làm ra một trang nhỏ chạy được ngay, rồi bạn gửi link cho đồng nghiệp dùng chung.</p><div class="use"><b>DÙNG VÀO</b>Bảng tính phí, checklist hồ sơ, dashboard báo cáo, form nhập liệu.</div></article>
+      <article class="feat reveal"><div class="top"><h3>Research</h3><span class="b">BUỔI 2</span></div><p>Tra nhiều nguồn trên mạng rồi tổng hợp lại, có dẫn link để bạn kiểm tra.</p><div class="use"><b>DÙNG VÀO</b>Tìm hiểu nhanh một quy định mới, một đối thủ, một thị trường.</div></article>
+      <article class="feat reveal"><div class="top"><h3>Skills</h3><span class="b">BUỔI 3</span></div><p>Đóng gói một quy trình bạn làm đi làm lại thành hướng dẫn, để Claude làm đúng các bước và đúng mẫu mỗi lần.</p><div class="use"><b>DÙNG VÀO</b>Rà hợp đồng theo checklist, lập báo cáo tháng, soạn văn bản theo mẫu công ty.</div></article>
+      <article class="feat reveal"><div class="top"><h3>Kết nối</h3><span class="b">BUỔI 3</span></div><p>Nối Claude với Gmail, Google Drive, Google Calendar để nó tự tìm và đọc thay vì bạn copy dán.</p><div class="use"><b>DÙNG VÀO</b>Tìm hết email của một khách trong tháng rồi tóm tắt lại, soạn trả lời từ file trong Drive.</div></article>
+      <article class="feat reveal"><div class="top"><h3>Claude in Chrome</h3><span class="b">BUỔI 4</span></div><p>Claude tự thao tác trên trình duyệt, mở trang, tra cứu, điền form, gom thông tin từ nhiều trang.</p><div class="use"><b>DÙNG VÀO</b>Tra cứu trên các cổng thông tin, nhập liệu lặp lại, gom dữ liệu về một bảng.</div></article>
+      <article class="feat reveal"><div class="top"><h3>Lên lịch</h3><span class="b">BUỔI 4</span></div><p>Giao cho Claude một việc định kỳ và để nó tự chạy đúng giờ, bạn không cần ngồi đó.</p><div class="use"><b>DÙNG VÀO</b>Tóm tắt email mỗi sáng, báo cáo tuần sáng thứ Hai, nhắc hạn.</div></article>
+    </div>
+  </section>
+
+  <!-- 05 LỘ TRÌNH -->
   <section id="lo-trinh" class="wrap sec">
-    <div class="eyebrow">03 / LỘ TRÌNH 4 BUỔI</div>
-    <h2 class="reveal">Mỗi buổi giải quyết một nhóm việc, mang về một thứ dùng được.</h2>
+    <div class="eyebrow">05 / LỘ TRÌNH 4 BUỔI</div>
+    <h2 class="reveal">Đi từ giao việc cho đúng tới để Claude tự chạy.</h2>
     <div class="sessions">
 
       <article class="ses reveal">
-        <div><div class="num">01</div><div class="tag">NỀN MÓNG</div></div>
+        <div><div class="num">01</div><div class="tag">NỀN MÓNG · PROJECTS · MEMORY</div></div>
         <div>
-          <h3>Giao việc cho Claude như giao cho một trợ lý mới</h3>
-          <p>Buổi đầu mình đi chậm để bạn có nền chắc. Phần lớn người dùng AI thấy kết quả kém là do cách giao việc, nên mình dành nhiều thời gian nhất cho phần này.</p>
+          <h3>Giao việc cho đúng, và để Claude nhớ bạn</h3>
+          <p>Buổi đầu mình đi chậm. Phần lớn người thấy AI trả lời chung chung là do cách giao việc, nên mình dành gần nửa buổi cho chuyện viết một yêu cầu có đủ bối cảnh, có ví dụ, có định dạng đầu ra, rồi mới tới Project và Memory để lần sau bạn khỏi viết lại mấy thứ đó.</p>
           <ul>
-            <li>Claude khác các công cụ AI khác ở đâu, gói miễn phí và gói trả phí khác nhau thế nào</li>
-            <li>Cấu trúc một yêu cầu tốt: bối cảnh, vai trò, tài liệu kèm theo, ví dụ mẫu, định dạng đầu ra</li>
-            <li>Cách hỏi lại, sửa từng phần thay vì bắt đầu lại từ đầu</li>
-            <li>Bảo mật: thông tin nào nên che, cài đặt nào nên kiểm tra trước khi dùng cho công việc</li>
-            <li>Khi nào Claude hay sai và cách bắt lỗi nhanh</li>
+            <li>Cách giao việc: bối cảnh, tài liệu kèm theo, ví dụ mẫu, kết quả mong muốn</li>
+            <li>Dựng Project đầu tiên cho mảng việc chính của bạn</li>
+            <li>Bật và chỉnh Memory, Styles để Claude viết gần với giọng của bạn</li>
+            <li>Bảo mật: cài đặt nào cần kiểm tra, thông tin nào nên che trước khi đưa vào</li>
+            <li>Mấy kiểu sai Claude hay mắc và cách bắt lỗi nhanh</li>
           </ul>
-          <div class="take"><b>MANG VỀ</b>Bộ mẫu yêu cầu cho 10 đầu việc lặp lại nhiều nhất của chính bạn.</div>
+          <div class="take"><b>MANG VỀ</b>Một Project có sẵn tài liệu và hướng dẫn cho công việc chính, cùng bộ mẫu yêu cầu cho những việc bạn làm nhiều nhất.</div>
         </div>
       </article>
 
       <article class="ses reveal">
-        <div><div class="num">02</div><div class="tag">ĐỌC &amp; SOẠN THẢO</div></div>
+        <div><div class="num">02</div><div class="tag">FILE · ARTIFACTS · RESEARCH</div></div>
         <div>
-          <h3>Xử lý tài liệu dài và văn bản lặp lại</h3>
-          <p>Nhóm việc tốn giờ nhất của dân văn phòng thường nằm ở chữ. Buổi này mình làm trực tiếp trên file thật của bạn (đã che thông tin nhạy cảm).</p>
+          <h3>Tài liệu, số liệu và mấy công cụ nhỏ tự làm</h3>
+          <p>Buổi này làm trên file thật của bạn. Phần đầu là chữ, đọc và tóm tắt hồ sơ dài, so hai bản hợp đồng xem khác nhau chỗ nào. Phần sau là số, đưa Excel vào để đối chiếu, tìm chỗ lệch rồi xuất ra báo cáo. Cuối buổi mình cùng bạn làm một Artifact cho đúng việc bạn hay cần.</p>
           <ul>
-            <li>Đưa PDF, Word dài vào Claude: tóm tắt, tìm điều khoản, trích các con số quan trọng</li>
-            <li>So sánh hai phiên bản tài liệu và liệt kê chỗ thay đổi</li>
-            <li>Soạn email, công văn, biên bản, thư tư vấn theo đúng giọng văn và mẫu của bạn</li>
-            <li>Dạy Claude viết giống bạn bằng văn bản mẫu và tính năng Styles</li>
-            <li>Rà lỗi, chỉnh câu chữ, chuyển văn bản sang tiếng Anh giữ đúng thuật ngữ</li>
-          </ul>
-          <div class="take"><b>MANG VỀ</b>Quy trình đọc và tóm tắt một tài liệu dài trong khoảng 15 phút, kèm mẫu cho văn bản bạn soạn thường xuyên nhất.</div>
-        </div>
-      </article>
-
-      <article class="ses reveal">
-        <div><div class="num">03</div><div class="tag">SỐ LIỆU &amp; BÁO CÁO</div></div>
-        <div>
-          <h3>Để Claude làm phần đối chiếu, bạn làm phần nhận định</h3>
-          <p>Claude đọc được Excel, CSV, có thể tự chạy phân tích, vẽ biểu đồ và xuất ra file. Buổi này biến một mớ số liệu thành báo cáo đọc được.</p>
-          <ul>
-            <li>Đưa file Excel vào để làm sạch, gộp, đối chiếu và tìm điểm bất thường</li>
-            <li>Đặt câu hỏi với số liệu bằng tiếng Việt, không cần biết công thức phức tạp</li>
-            <li>Tạo biểu đồ và bản tóm tắt cho người không có thời gian đọc chi tiết</li>
+            <li>Đọc, tóm tắt, tìm điều khoản trong PDF và Word dài</li>
+            <li>Đối chiếu Excel, tìm số liệu bất thường, vẽ biểu đồ</li>
             <li>Xuất kết quả ra Word, Excel, PowerPoint để dùng tiếp</li>
-            <li>Dùng Artifacts làm công cụ nhỏ: bảng tính phí, checklist hồ sơ, form nhập liệu</li>
+            <li>Tạo Artifact như bảng tính, checklist, dashboard nhỏ và chia sẻ bằng link</li>
+            <li>Dùng Research để tìm hiểu nhanh một chủ đề, có dẫn nguồn</li>
           </ul>
-          <div class="take"><b>MANG VỀ</b>Một báo cáo hoàn chỉnh làm từ dữ liệu thật của bạn, cùng quy trình để tháng sau lặp lại nhanh hơn.</div>
+          <div class="take"><b>MANG VỀ</b>Một báo cáo làm từ dữ liệu thật của bạn và một Artifact dùng được trong công việc.</div>
         </div>
       </article>
 
       <article class="ses reveal">
-        <div><div class="num">04</div><div class="tag">HỆ THỐNG HOÁ</div></div>
+        <div><div class="num">03</div><div class="tag">SKILLS · KẾT NỐI</div></div>
         <div>
-          <h3>Xây trợ lý riêng cho công việc chính của bạn</h3>
-          <p>Ba buổi đầu là từng kỹ năng. Buổi cuối ghép chúng lại để bạn không phải giải thích lại từ đầu mỗi lần mở Claude.</p>
+          <h3>Đóng gói quy trình thành Skill, nối Claude với hộp thư và Drive</h3>
+          <p>Tới đây bạn đã có vài việc làm với Claude khá trơn tru. Buổi 3 là lúc đóng gói chúng thành Skill, để lần sau chỉ cần nói một câu là Claude làm đúng quy trình của bạn, và nối Claude với Gmail, Drive, Lịch để nó tự lấy thông tin thay vì bạn ngồi copy dán.</p>
           <ul>
-            <li>Projects: kho tài liệu và hướng dẫn riêng cho từng khách hàng, vụ việc, phòng ban</li>
-            <li>Skills: ghi lại quy trình làm việc để Claude làm theo đúng cách của bạn</li>
-            <li>Kết nối Google Drive, Gmail, Lịch để Claude tìm và đọc tài liệu giúp bạn</li>
-            <li>Chọn một việc lặp lại hằng tuần và dựng quy trình hoàn chỉnh cho nó</li>
-            <li>Kế hoạch 30 ngày tiếp theo để thói quen mới đứng được</li>
+            <li>Skill là gì, khi nào nên làm Skill, khi nào chỉ cần Project là đủ</li>
+            <li>Viết Skill cho 1 đến 2 quy trình của bạn, chạy thử và chỉnh</li>
+            <li>Kết nối Gmail, Google Drive, Google Calendar</li>
+            <li>Ghép Skill với kết nối: tìm email của một khách, đọc hồ sơ trong Drive, soạn sẵn thư trả lời</li>
           </ul>
-          <div class="take"><b>MANG VỀ</b>Một Project được thiết lập sẵn cho công việc chính, dùng được ngay từ tuần sau.</div>
+          <div class="take"><b>MANG VỀ</b>1 đến 2 Skill chạy được cho quy trình của bạn, và Claude đã nối với hộp thư, Drive của bạn.</div>
+        </div>
+      </article>
+
+      <article class="ses reveal">
+        <div><div class="num">04</div><div class="tag">CLAUDE IN CHROME · LÊN LỊCH</div></div>
+        <div>
+          <h3>Để Claude tự làm trên trình duyệt và tự chạy theo lịch</h3>
+          <p>Đây là phần nhiều người thấy đã nhất, nhưng mình để cuối vì nó chỉ chạy ổn khi mấy buổi trước làm kỹ. Claude in Chrome cho Claude tự mở trình duyệt để tra cứu, điền form, gom dữ liệu, còn việc lên lịch thì để nó tự làm một việc mỗi sáng hay mỗi tuần mà bạn không cần ngồi canh.</p>
+          <ul>
+            <li>Cài và dùng Claude in Chrome an toàn, biết lúc nào để nó tự làm, lúc nào phải duyệt</li>
+            <li>Tra cứu trên các cổng thông tin, gom thông tin từ nhiều trang về một bảng, điền form lặp lại</li>
+            <li>Tạo việc lên lịch như tóm tắt email mỗi sáng, nhắc hạn, báo cáo tuần</li>
+            <li>Ghép Project, Skill, kết nối và lịch thành một quy trình chạy từ đầu tới cuối</li>
+            <li>Kế hoạch 30 ngày để bạn tự làm thêm sau khoá</li>
+          </ul>
+          <div class="take"><b>MANG VỀ</b>Ít nhất một việc lặp lại hằng tuần đã tự chạy, và một kế hoạch cho 30 ngày sau khoá.</div>
         </div>
       </article>
 
     </div>
-  </section>
-
-  <!-- 04 SAU 4 BUỔI -->
-  <section class="wrap sec">
-    <div class="eyebrow">04 / SAU 4 BUỔI, BẠN CÓ GÌ</div>
-    <h2 class="reveal">Những thứ nằm lại trong máy bạn, không chỉ trong vở ghi.</h2>
-    <ol class="outs">
-      <li>Biết giao việc cho Claude đủ rõ để lần đầu đã ra kết quả dùng được</li>
-      <li>Bộ mẫu yêu cầu viết riêng cho công việc của bạn</li>
-      <li>Quy trình đọc, tóm tắt và rà soát tài liệu dài</li>
-      <li>Mẫu soạn thảo cho các văn bản bạn viết nhiều nhất</li>
-      <li>Cách đưa số liệu vào và lấy ra báo cáo, biểu đồ, file Excel</li>
-      <li>Một Project riêng chứa tài liệu và hướng dẫn cho công việc chính</li>
-      <li>Thói quen kiểm tra lại kết quả, biết chỗ nào AI hay sai</li>
-      <li>Nguyên tắc bảo mật khi dùng AI với tài liệu công việc</li>
-    </ol>
 
     <div class="note reveal">
-      <div class="eyebrow" style="margin-bottom:10px">NÓI TRƯỚC CHO RÕ</div>
-      <p>Claude không thay được chuyên môn của bạn. Nó đọc nhanh, viết nhanh, tính nhanh, nhưng vẫn có lúc sai một con số hay hiểu nhầm một điều khoản, và người ký tên cuối cùng vẫn là bạn. Lớp này giúp bạn bớt phần việc tay chân để dành thời gian cho phần cần đến kinh nghiệm, chứ không giúp bạn bỏ qua bước kiểm tra.</p>
+      <div class="eyebrow" style="margin-bottom:10px">MỘT ĐIỀU MÌNH MUỐN NÓI TRƯỚC</div>
+      <p>Claude đọc nhanh, viết nhanh, tính nhanh, nhưng vẫn có lúc sai một con số hay hiểu nhầm một điều khoản mà giọng vẫn rất chắc chắn, và người ký tên cuối cùng vẫn là bạn. Lớp này giúp bạn bớt phần việc tay chân để có thêm thời gian cho phần cần tới kinh nghiệm của bạn, còn bước kiểm tra lại thì mình chỉ giúp bạn làm cho nhanh hơn chứ không bỏ được.</p>
     </div>
   </section>
 
-  <!-- 05 HỌC PHÍ -->
+  <!-- 06 HỌC PHÍ -->
   <section id="hoc-phi" class="wrap sec">
-    <div class="eyebrow">05 / HỌC PHÍ</div>
-    <h2 class="reveal">Một mức phí, đủ 4 buổi.</h2>
+    <div class="eyebrow">06 / HỌC PHÍ</div>
+    <h2 class="reveal">Một mức phí cho cả 4 buổi.</h2>
     <div id="dang-ky" class="price reveal">
       <div class="l">
         <div class="eyebrow">COACHING CLAUDE 10X</div>
         <div class="amount">2.999.000<sup>đ</sup></div>
-        <p class="sub">Trọn gói 4 buổi, chưa bao gồm phí thuê bao Claude (nếu bạn dùng gói trả phí).</p>
+        <p class="sub">Trọn gói 4 buổi. Chưa gồm phí gói Claude trả phí, chuyện có cần mua hay không mình sẽ nói kỹ ở buổi 1.</p>
         <div style="display:flex;flex-wrap:wrap;gap:12px">
           <a class="btn" href="https://zalo.me/0382885519">NHẮN ZALO GIỮ CHỖ ↗</a>
           <a class="btn ghost" href="https://www.facebook.com/tvnnhattran">FACEBOOK ↗</a>
         </div>
-        <p class="sub" style="margin:20px 0 0;font-size:15px">Nhắn mình kèm công việc bạn đang làm, mình sẽ gửi lịch học và hướng dẫn chuẩn bị trước buổi 1.</p>
+        <p class="sub" style="margin:20px 0 0;font-size:15px">Bạn nhắn mình đang làm công việc gì, mình gửi lịch học và hẹn cuộc gọi trước buổi 1.</p>
       </div>
       <div class="r">
         <div class="eyebrow" style="margin-bottom:12px">BAO GỒM</div>
         <ul class="incl">
-          <li>4 buổi học thực hành cùng Nhật Trần</li>
-          <li>Làm trực tiếp trên tài liệu và file công việc của bạn</li>
-          <li>Bộ mẫu yêu cầu và quy trình dùng trong lớp</li>
-          <li>Bài tập sau mỗi buổi gắn với việc thật</li>
-          <li>Một Project Claude thiết lập sẵn cho công việc chính</li>
-          <li>Kế hoạch áp dụng 30 ngày sau khoá</li>
+          <li>4 buổi học thực hành cùng mình</li>
+          <li>Cuộc gọi trước khoá để mình hiểu công việc của bạn</li>
+          <li>Ví dụ và bài tập soạn riêng theo việc bạn làm</li>
+          <li>Project, Skill, Artifact và việc lên lịch dựng xong ngay trong lúc học</li>
+          <li>Bộ mẫu yêu cầu dùng trong lớp</li>
+          <li>Kế hoạch 30 ngày sau khoá</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <!-- 06 HỎI ĐÁP -->
+  <!-- 07 HỎI ĐÁP -->
   <section id="hoi-dap" class="wrap sec faq">
-    <div class="eyebrow">06 / HỎI ĐÁP</div>
+    <div class="eyebrow">07 / HỎI ĐÁP</div>
     <h2 class="reveal">Vài câu mình hay được hỏi.</h2>
     <details>
       <summary>Mình không rành công nghệ, có theo được không?</summary>
-      <p>Được. Lớp không có code, không có thuật ngữ kỹ thuật. Bạn biết dùng email, Word, Excel ở mức thường ngày là đủ. Buổi đầu mình đi chậm để mọi người cùng xuất phát.</p>
+      <p>Được. Lớp không có code, không có thuật ngữ kỹ thuật, bạn dùng email, Word, Excel ở mức thường ngày là đủ. Buổi đầu mình đi chậm để ai cũng bắt kịp, mấy phần cài đặt Chrome hay kết nối Gmail thì mình làm cùng bạn từng bước.</p>
+    </details>
+    <details>
+      <summary>Mình làm nghề khác, không phải luật hay kế toán thì sao?</summary>
+      <p>Không sao. Mấy nghề trên trang chỉ là ví dụ. Trước buổi 1 mình sẽ gọi hỏi kỹ công việc của bạn rồi soạn lại ví dụ và bài tập cho hợp, miễn là công việc của bạn có nhiều phần đọc, viết, tính toán hay nhập liệu lặp lại.</p>
     </details>
     <details>
       <summary>Có cần mua gói Claude trả phí không?</summary>
-      <p>Gói miễn phí đủ cho phần lớn nội dung buổi 1 và 2. Với buổi 3 và 4 (phân tích file dài, Projects, kết nối Google Drive), gói trả phí sẽ thoải mái hơn nhiều. Mình sẽ nói rõ khi nào đáng nâng cấp để bạn tự quyết, không cần mua trước khi học.</p>
+      <p>Gói miễn phí đủ cho buổi 1 và một phần buổi 2. Từ buổi 3 trở đi, phần lớn mấy thứ như kết nối Gmail, Claude in Chrome hay việc lên lịch cần gói trả phí mới dùng thoải mái. Bạn không cần mua trước khi học, tới lúc cần mình sẽ nói rõ để bạn tự quyết.</p>
     </details>
     <details>
       <summary>Đưa tài liệu công việc lên Claude có an toàn không?</summary>
-      <p>Đây là phần mình dạy kỹ ở buổi 1: cài đặt nào cần kiểm tra, thông tin nào nên che hoặc thay bằng tên giả trước khi đưa vào, và loại tài liệu nào tốt nhất không đưa lên. Nếu công ty bạn có quy định riêng về AI thì mình sẽ làm theo quy định đó.</p>
+      <p>Phần này mình dạy kỹ ở buổi 1: cài đặt nào cần kiểm tra, thông tin nào nên che hoặc đổi tên trước khi đưa vào, loại tài liệu nào tốt nhất đừng đưa lên. Còn nếu công ty bạn có quy định riêng về AI thì mình làm theo quy định đó.</p>
     </details>
     <details>
-      <summary>Khác gì so với tự học trên YouTube?</summary>
-      <p>Video trên mạng dạy tính năng chung. Lớp này làm trên chính công việc của bạn, nên cuối khoá bạn có mẫu, quy trình và Project dùng được cho việc của mình, thay vì một danh sách mẹo phải tự tìm cách áp dụng.</p>
+      <summary>Khác gì so với tự xem video trên mạng?</summary>
+      <p>Video trên mạng dạy tính năng chung chung, xem xong bạn vẫn phải tự nghĩ cách đem vào việc của mình. Ở đây mình làm trên chính việc của bạn, nên học xong bạn có Project, Skill, mấy việc tự chạy dùng được luôn, thay vì một danh sách mẹo.</p>
     </details>
     <details>
-      <summary>Mình dùng ChatGPT rồi, có cần chuyển sang Claude không?</summary>
-      <p>Không bắt buộc. Phần lớn cách giao việc trong lớp dùng được cho mọi công cụ AI. Mình chọn Claude vì nó đọc tài liệu dài và viết tiếng Việt khá tốt, hợp với công việc văn phòng nhiều chữ. Học xong bạn sẽ tự so sánh được.</p>
+      <summary>Mình đang dùng ChatGPT, có cần chuyển sang Claude không?</summary>
+      <p>Không bắt buộc, cách giao việc trong lớp dùng được cho hầu hết công cụ AI. Mình chọn Claude vì nó đọc tài liệu dài và viết tiếng Việt khá ổn, lại có sẵn Project, Skill, Chrome, lên lịch trong cùng một chỗ, hợp với dân văn phòng. Học xong bạn tự so là biết.</p>
     </details>
     <details>
       <summary>Lịch học và hình thức thế nào?</summary>
-      <p>Bạn nhắn Zalo cho mình, mình sẽ gửi lịch khai giảng gần nhất và hình thức học cụ thể. Nếu bạn ở Đà Nẵng, mình ưu tiên ngồi học trực tiếp.</p>
+      <p>Bạn nhắn Zalo cho mình, mình gửi lịch gần nhất và hình thức học cụ thể. Bạn ở Đà Nẵng thì mình ưu tiên ngồi học trực tiếp.</p>
     </details>
   </section>
 
@@ -398,12 +455,12 @@ body{padding-bottom:84px}
 <!-- LIÊN HỆ -->
 <section class="contact" aria-labelledby="lh">
   <div class="inner">
-    <div class="eyebrow">07 / ĐĂNG KÝ</div>
-    <h2 id="lh" class="reveal">BẮT ĐẦU<br>TỪ TUẦN SAU?</h2>
+    <div class="eyebrow">08 / ĐĂNG KÝ</div>
+    <h2 id="lh" class="reveal">NHẮN<br>MÌNH NHÉ?</h2>
     <div class="cgrid">
       <div class="txt">
-        <p>Bạn chỉ cần nhắn cho mình đang làm công việc gì, và một hai việc bạn thấy tốn thời gian nhất mỗi tuần. Mình sẽ xem trước để buổi 1 đi thẳng vào việc của bạn thay vì nói chung chung.</p>
-        <p style="margin:0">Nếu đọc xong vẫn chưa chắc lớp có hợp với mình không, cứ nhắn hỏi, mình trả lời thật, kể cả khi câu trả lời là bạn chưa cần học.</p>
+        <p>Bạn chỉ cần nhắn cho mình đang làm công việc gì, và một hai việc bạn thấy tốn thời gian nhất mỗi tuần, mình sẽ xem trước để buổi đầu đi thẳng vào việc của bạn luôn.</p>
+        <p style="margin:0">Còn nếu đọc tới đây mà vẫn chưa chắc lớp có hợp với mình không thì cứ nhắn hỏi, mình trả lời thật, kể cả khi câu trả lời là bạn chưa cần học.</p>
       </div>
       <div class="links">
         <a href="https://zalo.me/0382885519"><span class="k"><small>ZALO</small><strong>0382 885 519</strong></span><span aria-hidden="true" style="font-size:22px">↗</span></a>
