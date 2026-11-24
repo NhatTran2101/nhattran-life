@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coaching Claude 10x · Nhattran.life</title>
+<meta name="description" content="4 buổi coaching cùng Nhật Trần: cách đưa AI Claude vào công việc văn phòng hằng ngày để tiết kiệm thời gian và làm được nhiều việc hơn. Học phí 2.999.000đ.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nhattran.life/coaching-claude-10x/">
+<meta property="og:title" content="Coaching Claude 10x · 4 buổi cùng Nhật Trần">
+<meta property="og:description" content="Đưa Claude vào công việc văn phòng hằng ngày: đọc tài liệu, soạn thảo, xử lý số liệu, làm báo cáo. 4 buổi, 2.999.000đ.">
+<meta property="og:image" content="https://nhattran.life/assets/img/9b2ea9a542023743b3ca3a4431b9a68d.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F7F7F5">
+<link rel="canonical" href="https://nhattran.life/coaching-claude-10x/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,400;0,6..12,600;1,6..12,400&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F7F7F5;--ink:#111111;--mute:#3A3A3A;--soft:#6B6B6B;--line:#E4E4E1;--card:#FFFFFF;--hover:#EFEFEC}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.85}
+a{color:var(--ink)}
+img{max-width:100%}
+section[id]{scroll-margin-top:72px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 clamp(20px,4vw,40px)}
+.lex{font-family:'Lexend',sans-serif}
+.eyebrow{font-family:'Lexend',sans-serif;font-size:13px;letter-spacing:2px;color:var(--mute);text-transform:uppercase}
+h1,h2,h3{font-family:'Lexend',sans-serif;font-weight:500;letter-spacing:-0.03em;margin:0}
+h2{font-size:clamp(34px,6vw,72px);line-height:1.08;margin:18px 0 28px}
+h3{font-size:clamp(20px,2.4vw,24px);line-height:1.35;letter-spacing:-0.01em}
+p{margin:0 0 16px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border:1px solid var(--ink);border-radius:12px;background:var(--ink);color:var(--bg);text-decoration:none;font-family:'Lexend',sans-serif;font-size:13px;letter-spacing:1.5px;white-space:nowrap;transition:background .2s,color .2s}
+.btn:hover{background:var(--bg);color:var(--ink)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--bg)}
+
+/* header */
+header{position:sticky;top:0;z-index:30;background:rgba(247,247,245,.92);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:10px;padding-bottom:10px;font-family:'Lexend',sans-serif;font-size:13px;letter-spacing:1.5px}
+nav .logo{display:inline-flex;align-items:center;min-height:44px}
+nav .logo img{display:block;height:clamp(22px,2.6vw,28px);width:auto}
+.navmid{display:flex;gap:28px}
+.navl{padding:12px 2px;text-decoration:none}
+.navl:hover{text-decoration:underline;text-underline-offset:6px}
+
+/* hero */
+.hero{padding-top:40px;padding-bottom:72px}
+.hero-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px}
+.hero h1{margin:28px 0 0;font-size:clamp(52px,13vw,176px);line-height:1;text-transform:uppercase}
+.hero h1 span{display:block;font-size:.42em;letter-spacing:-0.02em;color:var(--soft);margin-top:.25em}
+.hero-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(32px,5vw,72px);align-items:end;margin-top:48px}
+.lead{font-size:clamp(19px,2vw,22px);line-height:1.7;max-width:600px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.hero-photo{position:relative;border-radius:16px;overflow:hidden;aspect-ratio:4/3;background:var(--hover)}
+.hero-photo img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.05);display:block}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);margin-top:56px;border-top:1px solid var(--ink)}
+.fact{padding:20px 0;border-bottom:1px solid var(--line)}
+.fact+.fact{padding-left:24px;border-left:1px solid var(--line)}
+.fact b{display:block;font-family:'Lexend',sans-serif;font-weight:600;font-size:clamp(24px,3.4vw,40px);line-height:1.2;letter-spacing:-0.02em}
+.fact small{font-family:'Lexend',sans-serif;font-size:12px;letter-spacing:2px;color:var(--soft)}
+
+/* sections */
+.sec{padding-top:clamp(80px,10vw,130px)}
+.two{display:grid;grid-template-columns:1fr 1.3fr;gap:clamp(28px,5vw,80px)}
+.prose{max-width:680px}
+.prose p{color:#2A2A2A}
+
+.pains{list-style:none;margin:0;padding:0;border-top:1px solid var(--ink)}
+.pains li{display:grid;grid-template-columns:56px 1fr;gap:12px;padding:22px 8px;border-bottom:1px solid var(--line);border-radius:12px;transition:background .2s}
+.pains li:hover{background:var(--hover)}
+.pains .n{font-family:'Lexend',sans-serif;font-size:14px;color:var(--soft);padding-top:4px}
+.pains h3{margin-bottom:6px}
+.pains p{margin:0;color:#2A2A2A}
+
+/* sessions */
+.sessions{display:grid;gap:18px}
+.ses{display:grid;grid-template-columns:200px 1fr;gap:clamp(20px,4vw,48px);background:var(--card);border:1px solid var(--line);border-radius:20px;padding:clamp(24px,3.5vw,40px);transition:transform .3s cubic-bezier(.2,.7,.2,1),box-shadow .3s}
+.ses:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(17,17,17,.08)}
+.ses .num{font-family:'Lexend',sans-serif;font-weight:500;font-size:clamp(56px,7vw,96px);line-height:1;letter-spacing:-0.04em}
+.ses .tag{font-family:'Lexend',sans-serif;font-size:12px;letter-spacing:2px;color:var(--soft);margin-top:10px}
+.ses h3{font-size:clamp(22px,2.8vw,30px);margin-bottom:12px}
+.ses ul{margin:14px 0 0;padding-left:20px}
+.ses li{margin:4px 0}
+.take{margin-top:20px;padding:14px 18px;border-radius:12px;background:var(--bg);border-left:3px solid var(--ink)}
+.take b{font-family:'Lexend',sans-serif;font-weight:600;font-size:12px;letter-spacing:2px;display:block;margin-bottom:2px}
+
+/* outcomes */
+.outs{display:grid;grid-template-columns:repeat(2,1fr);gap:0 48px;counter-reset:o;list-style:none;padding:0;margin:0}
+.outs li{counter-increment:o;display:grid;grid-template-columns:44px 1fr;padding:18px 0;border-bottom:1px solid var(--line)}
+.outs li::before{content:counter(o,decimal-leading-zero);font-family:'Lexend',sans-serif;font-size:14px;color:var(--soft);padding-top:3px}
+
+.note{margin-top:40px;padding:clamp(22px,3vw,32px);border:1px dashed #BDBDBD;border-radius:16px;max-width:820px}
+.note p:last-child{margin:0}
+
+/* price */
+.price{display:grid;grid-template-columns:1fr 1fr;gap:0;border-radius:28px;overflow:hidden;background:var(--ink);color:var(--bg)}
+.price .l{padding:clamp(32px,5vw,64px)}
+.price .r{padding:clamp(32px,5vw,64px);background:#1C1C1C}
+.price .eyebrow{color:#BDBDBD}
+.amount{font-family:'Lexend',sans-serif;font-weight:500;font-size:clamp(48px,8vw,104px);line-height:1;letter-spacing:-0.04em;margin:20px 0 8px;white-space:nowrap}
+.amount sup{font-size:.35em;vertical-align:top;margin-left:4px;letter-spacing:0}
+.price .sub{color:#BDBDBD;margin:0 0 28px}
+.incl{list-style:none;margin:0;padding:0}
+.incl li{padding:14px 0 14px 32px;border-bottom:1px solid #3A3A3A;position:relative;color:#DADAD6}
+.incl li::before{content:"";position:absolute;left:4px;top:24px;width:12px;height:7px;border-left:2px solid #F7F7F5;border-bottom:2px solid #F7F7F5;transform:rotate(-45deg)}
+.price .btn{background:var(--bg);color:var(--ink);border-color:var(--bg)}
+.price .btn:hover{background:transparent;color:var(--bg)}
+.price .btn.ghost{background:transparent;color:var(--bg)}
+.price .btn.ghost:hover{background:var(--bg);color:var(--ink)}
+
+/* faq */
+.faq details{border-bottom:1px solid var(--line)}
+.faq details:first-child{border-top:1px solid var(--ink)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:16px;align-items:center;padding:22px 4px;font-family:'Lexend',sans-serif;font-size:clamp(17px,2vw,20px);font-weight:500}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:26px;font-weight:300;transition:transform .25s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding:0 4px 8px;max-width:760px;color:#2A2A2A}
+.faq details p:last-child{padding-bottom:22px}
+
+/* contact */
+.contact{margin:clamp(100px,12vw,150px) auto 24px;width:calc(100% - 32px);max-width:1240px;border-radius:32px;overflow:clip;background:var(--ink);color:var(--bg)}
+.contact .inner{padding:clamp(56px,8vw,110px) clamp(20px,4vw,40px) 48px;max-width:1120px;margin:0 auto}
+.contact .eyebrow{color:#BDBDBD}
+.contact h2{font-size:clamp(40px,8vw,116px);margin:20px 0 28px}
+.cgrid{display:flex;flex-wrap:wrap;gap:40px 64px;align-items:flex-start}
+.cgrid .txt{flex:1.3 1 340px;max-width:680px;color:#DADAD6}
+.links{flex:1 1 300px;display:flex;flex-direction:column;border-top:1px solid var(--bg)}
+.links a{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:18px 0;border-bottom:1px solid #3A3A3A;color:var(--bg);text-decoration:none}
+.links a span.k{display:flex;flex-direction:column;line-height:1.3}
+.links small{font-family:'Lexend',sans-serif;font-size:12px;letter-spacing:2px;color:#BDBDBD}
+.links strong{font-family:'Lexend',sans-serif;font-size:clamp(22px,3vw,28px);font-weight:700;white-space:nowrap}
+.foot{margin-top:72px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;font-family:'Lexend',sans-serif;font-size:12px;letter-spacing:1.5px;color:#8A8A8A}
+.foot a{color:#8A8A8A}
+
+/* mobile sticky cta */
+.mcta{display:none}
+
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.rise{opacity:0;animation:rise .9s cubic-bezier(.2,.7,.2,1) forwards}
+@supports (animation-timeline: view()){
+.reveal{animation:rise linear both;animation-timeline:view();animation-range:entry 0% entry 35%}
+@keyframes tocolor{from{filter:grayscale(1) contrast(1.05)}to{filter:grayscale(0) contrast(1)}}
+.hero-photo img{animation:tocolor linear both;animation-timeline:view();animation-range:exit 0% exit 60%}
+}
+@media (prefers-reduced-motion: reduce){
+.rise,.reveal,.hero-photo img{animation:none!important;opacity:1!important}
+html{scroll-behavior:auto}
+}
+
+@media (max-width: 900px){
+.navmid{display:none}
+.hero-grid,.two,.price{grid-template-columns:1fr}
+.ses{grid-template-columns:1fr}
+.outs{grid-template-columns:1fr}
+}
+@media (max-width: 620px){
+.facts{grid-template-columns:1fr}
+.fact+.fact{padding-left:0;border-left:0}
+.hero-cta .btn{flex:1 1 100%}
+.mcta{display:flex;position:fixed;left:16px;right:16px;bottom:16px;z-index:40;justify-content:space-between;align-items:center;gap:12px;padding:10px 10px 10px 18px;background:var(--ink);color:var(--bg);border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.25);font-family:'Lexend',sans-serif;font-size:14px}
+.mcta .btn{min-height:42px;background:var(--bg);color:var(--ink);border-color:var(--bg)}
+body{padding-bottom:84px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="wrap" aria-label="Chính">
+    <a class="logo" href="/" aria-label="Về trang chủ Nhattran.life"><img src="../assets/img/87c26fe39c3deceb5281165145abc7ca.png" alt="Nhattran.Life"></a>
+    <div class="navmid">
+      <a class="navl" href="#vi-sao">VÌ SAO</a>
+      <a class="navl" href="#lo-trinh">LỘ TRÌNH</a>
+      <a class="navl" href="#hoc-phi">HỌC PHÍ</a>
+      <a class="navl" href="#hoi-dap">HỎI ĐÁP</a>
+    </div>
+    <a class="btn" href="#dang-ky">ĐĂNG KÝ →</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="wrap hero">
+    <div class="hero-top rise">
+      <span class="eyebrow">COACHING 1:1 &amp; NHÓM NHỎ · CÙNG NHẬT TRẦN</span>
+      <span class="eyebrow">4 BUỔI · ỨNG DỤNG CLAUDE VÀO CÔNG VIỆC</span>
+    </div>
+    <h1 class="rise" style="animation-delay:.1s">Claude 10x<span>Làm việc văn phòng nhanh hơn, đỡ mệt hơn.</span></h1>
+
+    <div class="hero-grid">
+      <div class="rise" style="animation-delay:.2s">
+        <p class="lead">Bốn buổi để bạn đưa Claude vào đúng những việc đang ngốn thời gian mỗi ngày: đọc tài liệu dài, soạn văn bản, đối chiếu số liệu, làm báo cáo. Học trên chính hồ sơ và file của bạn, ra về là dùng được ngay sáng hôm sau.</p>
+        <div class="hero-cta">
+          <a class="btn" href="#dang-ky">GIỮ CHỖ · 2.999.000Đ</a>
+          <a class="btn ghost" href="#lo-trinh">XEM LỘ TRÌNH 4 BUỔI</a>
+        </div>
+      </div>
+      <figure class="hero-photo rise" style="margin:0;animation-delay:.3s">
+        <img src="../assets/img/9b2ea9a542023743b3ca3a4431b9a68d.jpg" alt="Nhật Trần trong một buổi chia sẻ">
+      </figure>
+    </div>
+
+    <div class="facts rise" style="animation-delay:.35s">
+      <div class="fact"><small>THỜI LƯỢNG</small><b>4 buổi</b></div>
+      <div class="fact"><small>HỌC PHÍ</small><b>2.999.000đ</b></div>
+      <div class="fact"><small>CÔNG CỤ</small><b>Claude</b></div>
+    </div>
+  </section>
+
+  <!-- 01 VÌ SAO -->
+  <section id="vi-sao" class="wrap sec">
+    <div class="two">
+      <div>
+        <div class="eyebrow">01 / VÌ SAO MÌNH MỞ LỚP NÀY</div>
+        <h2 class="reveal">Biết dùng AI và để AI làm việc cho mình là hai chuyện khác nhau.</h2>
+      </div>
+      <div class="prose">
+        <p>Mình dùng Claude hằng ngày trong công việc ở Gendigi, từ soạn đề xuất, đọc hợp đồng với đối tác, tới tổng hợp số liệu cuối tháng. Thứ làm mình thay đổi cách làm việc không nằm ở việc biết thêm vài câu lệnh hay, mà ở chỗ mình ngồi xuống liệt kê ra những việc lặp đi lặp lại mỗi tuần rồi giao từng việc một cho Claude, có quy trình, có mẫu, có chỗ để kiểm tra lại.</p>
+        <p>Khi nói chuyện với bạn bè làm văn phòng, mình hay nghe cùng một câu: đã thử ChatGPT hoặc Claude rồi, thấy cũng hay, nhưng kết quả chung chung quá nên lại quay về làm tay. Mình hiểu cảm giác đó, vì hồi đầu mình cũng vậy. Vấn đề thường nằm ở cách giao việc, ở chỗ mình chưa đưa đủ bối cảnh, chưa cho nó xem mẫu, chưa biết tính năng nào hợp với loại việc nào.</p>
+        <p>Lớp này là phần mình tự mày mò được, gói lại trong 4 buổi. Mình không hứa bạn sẽ nhanh gấp 10 lần ở mọi việc, con số 10x là cái đích để nhắm tới ở vài đầu việc cụ thể nhất của bạn. Có việc Claude làm rất tốt, có việc vẫn cần bạn làm, và một phần của lớp là giúp bạn phân biệt được hai loại đó.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 CÓ PHẢI BẠN -->
+  <section class="wrap sec">
+    <div class="eyebrow">02 / NẾU BẠN ĐANG GẶP NHỮNG CHUYỆN NÀY</div>
+    <h2 class="reveal">Những việc ăn mất thời gian của bạn mỗi tuần.</h2>
+    <ul class="pains">
+      <li><span class="n">01</span><div><h3>Đọc một tài liệu 40 trang chỉ để tìm 3 điều khoản</h3><p>Hợp đồng, thông tư, hồ sơ khách gửi qua. Đọc hết thì mất cả buổi, đọc lướt thì sợ sót.</p></div></li>
+      <li><span class="n">02</span><div><h3>Soạn đi soạn lại những văn bản na ná nhau</h3><p>Email trả lời khách, công văn, biên bản, thư tư vấn. Mỗi lần lại mở file cũ ra sửa tên, sửa số, sửa ngày.</p></div></li>
+      <li><span class="n">03</span><div><h3>Đối chiếu số liệu giữa nhiều file Excel</h3><p>Sao kê với sổ sách, báo cáo tháng này với tháng trước. Việc không khó nhưng dễ nhầm và rất lâu.</p></div></li>
+      <li><span class="n">04</span><div><h3>Báo cáo cuối tháng luôn làm vào phút chót</h3><p>Dữ liệu có sẵn, nhưng biến nó thành một bản tóm tắt sếp đọc được trong 5 phút lại là chuyện khác.</p></div></li>
+      <li><span class="n">05</span><div><h3>Đã thử AI nhưng câu trả lời chung chung, lại phải sửa nhiều</h3><p>Kết quả trôi chảy mà không dùng được, hoặc nghe rất tự tin nhưng sai chi tiết.</p></div></li>
+      <li><span class="n">06</span><div><h3>Ngại đưa tài liệu công việc lên AI vì lo bảo mật</h3><p>Không biết cái gì được đưa vào, cái gì nên che đi, cài đặt nào cần tắt.</p></div></li>
+    </ul>
+  </section>
+
+  <!-- 03 LỘ TRÌNH -->
+  <section id="lo-trinh" class="wrap sec">
+    <div class="eyebrow">03 / LỘ TRÌNH 4 BUỔI</div>
+    <h2 class="reveal">Mỗi buổi giải quyết một nhóm việc, mang về một thứ dùng được.</h2>
+    <div class="sessions">
+
+      <article class="ses reveal">
+        <div><div class="num">01</div><div class="tag">NỀN MÓNG</div></div>
+        <div>
+          <h3>Giao việc cho Claude như giao cho một trợ lý mới</h3>
+          <p>Buổi đầu mình đi chậm để bạn có nền chắc. Phần lớn người dùng AI thấy kết quả kém là do cách giao việc, nên mình dành nhiều thời gian nhất cho phần này.</p>
+          <ul>
+            <li>Claude khác các công cụ AI khác ở đâu, gói miễn phí và gói trả phí khác nhau thế nào</li>
+            <li>Cấu trúc một yêu cầu tốt: bối cảnh, vai trò, tài liệu kèm theo, ví dụ mẫu, định dạng đầu ra</li>
+            <li>Cách hỏi lại, sửa từng phần thay vì bắt đầu lại từ đầu</li>
+            <li>Bảo mật: thông tin nào nên che, cài đặt nào nên kiểm tra trước khi dùng cho công việc</li>
+            <li>Khi nào Claude hay sai và cách bắt lỗi nhanh</li>
+          </ul>
+          <div class="take"><b>MANG VỀ</b>Bộ mẫu yêu cầu cho 10 đầu việc lặp lại nhiều nhất của chính bạn.</div>
+        </div>
+      </article>
+
+      <article class="ses reveal">
+        <div><div class="num">02</div><div class="tag">ĐỌC &amp; SOẠN THẢO</div></div>
+        <div>
+          <h3>Xử lý tài liệu dài và văn bản lặp lại</h3>
+          <p>Nhóm việc tốn giờ nhất của dân văn phòng thường nằm ở chữ. Buổi này mình làm trực tiếp trên file thật của bạn (đã che thông tin nhạy cảm).</p>
+          <ul>
+            <li>Đưa PDF, Word dài vào Claude: tóm tắt, tìm điều khoản, trích các con số quan trọng</li>
+            <li>So sánh hai phiên bản tài liệu và liệt kê chỗ thay đổi</li>
+            <li>Soạn email, công văn, biên bản, thư tư vấn theo đúng giọng văn và mẫu của bạn</li>
+            <li>Dạy Claude viết giống bạn bằng văn bản mẫu và tính năng Styles</li>
+            <li>Rà lỗi, chỉnh câu chữ, chuyển văn bản sang tiếng Anh giữ đúng thuật ngữ</li>
+          </ul>
+          <div class="take"><b>MANG VỀ</b>Quy trình đọc và tóm tắt một tài liệu dài trong khoảng 15 phút, kèm mẫu cho văn bản bạn soạn thường xuyên nhất.</div>
+        </div>
+      </article>
+
+      <article class="ses reveal">
+        <div><div class="num">03</div><div class="tag">SỐ LIỆU &amp; BÁO CÁO</div></div>
+        <div>
+          <h3>Để Claude làm phần đối chiếu, bạn làm phần nhận định</h3>
+          <p>Claude đọc được Excel, CSV, có thể tự chạy phân tích, vẽ biểu đồ và xuất ra file. Buổi này biến một mớ số liệu thành báo cáo đọc được.</p>
+          <ul>
+            <li>Đưa file Excel vào để làm sạch, gộp, đối chiếu và tìm điểm bất thường</li>
+            <li>Đặt câu hỏi với số liệu bằng tiếng Việt, không cần biết công thức phức tạp</li>
+            <li>Tạo biểu đồ và bản tóm tắt cho người không có thời gian đọc chi tiết</li>
+            <li>Xuất kết quả ra Word, Excel, PowerPoint để dùng tiếp</li>
+            <li>Dùng Artifacts làm công cụ nhỏ: bảng tính phí, checklist hồ sơ, form nhập liệu</li>
+          </ul>
+          <div class="take"><b>MANG VỀ</b>Một báo cáo hoàn chỉnh làm từ dữ liệu thật của bạn, cùng quy trình để tháng sau lặp lại nhanh hơn.</div>
+        </div>
+      </article>
+
+      <article class="ses reveal">
+        <div><div class="num">04</div><div class="tag">HỆ THỐNG HOÁ</div></div>
+        <div>
+          <h3>Xây trợ lý riêng cho công việc chính của bạn</h3>
+          <p>Ba buổi đầu là từng kỹ năng. Buổi cuối ghép chúng lại để bạn không phải giải thích lại từ đầu mỗi lần mở Claude.</p>
+          <ul>
+            <li>Projects: kho tài liệu và hướng dẫn riêng cho từng khách hàng, vụ việc, phòng ban</li>
+            <li>Skills: ghi lại quy trình làm việc để Claude làm theo đúng cách của bạn</li>
+            <li>Kết nối Google Drive, Gmail, Lịch để Claude tìm và đọc tài liệu giúp bạn</li>
+            <li>Chọn một việc lặp lại hằng tuần và dựng quy trình hoàn chỉnh cho nó</li>
+            <li>Kế hoạch 30 ngày tiếp theo để thói quen mới đứng được</li>
+          </ul>
+          <div class="take"><b>MANG VỀ</b>Một Project được thiết lập sẵn cho công việc chính, dùng được ngay từ tuần sau.</div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- 04 SAU 4 BUỔI -->
+  <section class="wrap sec">
+    <div class="eyebrow">04 / SAU 4 BUỔI, BẠN CÓ GÌ</div>
+    <h2 class="reveal">Những thứ nằm lại trong máy bạn, không chỉ trong vở ghi.</h2>
+    <ol class="outs">
+      <li>Biết giao việc cho Claude đủ rõ để lần đầu đã ra kết quả dùng được</li>
+      <li>Bộ mẫu yêu cầu viết riêng cho công việc của bạn</li>
+      <li>Quy trình đọc, tóm tắt và rà soát tài liệu dài</li>
+      <li>Mẫu soạn thảo cho các văn bản bạn viết nhiều nhất</li>
+      <li>Cách đưa số liệu vào và lấy ra báo cáo, biểu đồ, file Excel</li>
+      <li>Một Project riêng chứa tài liệu và hướng dẫn cho công việc chính</li>
+      <li>Thói quen kiểm tra lại kết quả, biết chỗ nào AI hay sai</li>
+      <li>Nguyên tắc bảo mật khi dùng AI với tài liệu công việc</li>
+    </ol>
+
+    <div class="note reveal">
+      <div class="eyebrow" style="margin-bottom:10px">NÓI TRƯỚC CHO RÕ</div>
+      <p>Claude không thay được chuyên môn của bạn. Nó đọc nhanh, viết nhanh, tính nhanh, nhưng vẫn có lúc sai một con số hay hiểu nhầm một điều khoản, và người ký tên cuối cùng vẫn là bạn. Lớp này giúp bạn bớt phần việc tay chân để dành thời gian cho phần cần đến kinh nghiệm, chứ không giúp bạn bỏ qua bước kiểm tra.</p>
+    </div>
+  </section>
+
+  <!-- 05 HỌC PHÍ -->
+  <section id="hoc-phi" class="wrap sec">
+    <div class="eyebrow">05 / HỌC PHÍ</div>
+    <h2 class="reveal">Một mức phí, đủ 4 buổi.</h2>
+    <div id="dang-ky" class="price reveal">
+      <div class="l">
+        <div class="eyebrow">COACHING CLAUDE 10X</div>
+        <div class="amount">2.999.000<sup>đ</sup></div>
+        <p class="sub">Trọn gói 4 buổi, chưa bao gồm phí thuê bao Claude (nếu bạn dùng gói trả phí).</p>
+        <div style="display:flex;flex-wrap:wrap;gap:12px">
+          <a class="btn" href="https://zalo.me/0382885519">NHẮN ZALO GIỮ CHỖ ↗</a>
+          <a class="btn ghost" href="https://www.facebook.com/tvnnhattran">FACEBOOK ↗</a>
+        </div>
+        <p class="sub" style="margin:20px 0 0;font-size:15px">Nhắn mình kèm công việc bạn đang làm, mình sẽ gửi lịch học và hướng dẫn chuẩn bị trước buổi 1.</p>
+      </div>
+      <div class="r">
+        <div class="eyebrow" style="margin-bottom:12px">BAO GỒM</div>
+        <ul class="incl">
+          <li>4 buổi học thực hành cùng Nhật Trần</li>
+          <li>Làm trực tiếp trên tài liệu và file công việc của bạn</li>
+          <li>Bộ mẫu yêu cầu và quy trình dùng trong lớp</li>
+          <li>Bài tập sau mỗi buổi gắn với việc thật</li>
+          <li>Một Project Claude thiết lập sẵn cho công việc chính</li>
+          <li>Kế hoạch áp dụng 30 ngày sau khoá</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 HỎI ĐÁP -->
+  <section id="hoi-dap" class="wrap sec faq">
+    <div class="eyebrow">06 / HỎI ĐÁP</div>
+    <h2 class="reveal">Vài câu mình hay được hỏi.</h2>
+    <details>
+      <summary>Mình không rành công nghệ, có theo được không?</summary>
+      <p>Được. Lớp không có code, không có thuật ngữ kỹ thuật. Bạn biết dùng email, Word, Excel ở mức thường ngày là đủ. Buổi đầu mình đi chậm để mọi người cùng xuất phát.</p>
+    </details>
+    <details>
+      <summary>Có cần mua gói Claude trả phí không?</summary>
+      <p>Gói miễn phí đủ cho phần lớn nội dung buổi 1 và 2. Với buổi 3 và 4 (phân tích file dài, Projects, kết nối Google Drive), gói trả phí sẽ thoải mái hơn nhiều. Mình sẽ nói rõ khi nào đáng nâng cấp để bạn tự quyết, không cần mua trước khi học.</p>
+    </details>
+    <details>
+      <summary>Đưa tài liệu công việc lên Claude có an toàn không?</summary>
+      <p>Đây là phần mình dạy kỹ ở buổi 1: cài đặt nào cần kiểm tra, thông tin nào nên che hoặc thay bằng tên giả trước khi đưa vào, và loại tài liệu nào tốt nhất không đưa lên. Nếu công ty bạn có quy định riêng về AI thì mình sẽ làm theo quy định đó.</p>
+    </details>
+    <details>
+      <summary>Khác gì so với tự học trên YouTube?</summary>
+      <p>Video trên mạng dạy tính năng chung. Lớp này làm trên chính công việc của bạn, nên cuối khoá bạn có mẫu, quy trình và Project dùng được cho việc của mình, thay vì một danh sách mẹo phải tự tìm cách áp dụng.</p>
+    </details>
+    <details>
+      <summary>Mình dùng ChatGPT rồi, có cần chuyển sang Claude không?</summary>
+      <p>Không bắt buộc. Phần lớn cách giao việc trong lớp dùng được cho mọi công cụ AI. Mình chọn Claude vì nó đọc tài liệu dài và viết tiếng Việt khá tốt, hợp với công việc văn phòng nhiều chữ. Học xong bạn sẽ tự so sánh được.</p>
+    </details>
+    <details>
+      <summary>Lịch học và hình thức thế nào?</summary>
+      <p>Bạn nhắn Zalo cho mình, mình sẽ gửi lịch khai giảng gần nhất và hình thức học cụ thể. Nếu bạn ở Đà Nẵng, mình ưu tiên ngồi học trực tiếp.</p>
+    </details>
+  </section>
+
+</main>
+
+<!-- LIÊN HỆ -->
+<section class="contact" aria-labelledby="lh">
+  <div class="inner">
+    <div class="eyebrow">07 / ĐĂNG KÝ</div>
+    <h2 id="lh" class="reveal">BẮT ĐẦU<br>TỪ TUẦN SAU?</h2>
+    <div class="cgrid">
+      <div class="txt">
+        <p>Bạn chỉ cần nhắn cho mình đang làm công việc gì, và một hai việc bạn thấy tốn thời gian nhất mỗi tuần. Mình sẽ xem trước để buổi 1 đi thẳng vào việc của bạn thay vì nói chung chung.</p>
+        <p style="margin:0">Nếu đọc xong vẫn chưa chắc lớp có hợp với mình không, cứ nhắn hỏi, mình trả lời thật, kể cả khi câu trả lời là bạn chưa cần học.</p>
+      </div>
+      <div class="links">
+        <a href="https://zalo.me/0382885519"><span class="k"><small>ZALO</small><strong>0382 885 519</strong></span><span aria-hidden="true" style="font-size:22px">↗</span></a>
+        <a href="https://www.facebook.com/tvnnhattran"><span class="k"><small>FACEBOOK</small><span>facebook.com/tvnnhattran</span></span><span aria-hidden="true" style="font-size:22px">↗</span></a>
+        <a href="mailto:tvn.nhattran@gmail.com?subject=%C4%90%C4%83ng%20k%C3%BD%20Coaching%20Claude%2010x"><span class="k"><small>EMAIL</small><span>tvn.nhattran@gmail.com</span></span><span aria-hidden="true" style="font-size:22px">↗</span></a>
+      </div>
+    </div>
+    <div class="foot">
+      <span>© 2026 <a href="/">NHATTRAN.LIFE</a></span>
+      <span>1% BETTER EVERY DAY</span>
+    </div>
+  </div>
+</section>
+
+<div class="mcta" role="complementary" aria-label="Đăng ký nhanh">
+  <span>Claude 10x · 2.999.000đ</span>
+  <a class="btn" href="https://zalo.me/0382885519">GIỮ CHỖ</a>
+</div>
+
+</body>
+</html>
